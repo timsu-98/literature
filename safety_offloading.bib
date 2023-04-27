@@ -7,7 +7,7 @@
   date         = {2019-08},
   doi          = {10.1109/jproc.2019.2922285},
   file         = {:pdf/Lin2019 - Computation Offloading toward Edge Computing.pdf:PDF},
-  groups       = {survey},
+  groups       = {survey, MEC},
   journaltitle = {Proceedings of the {IEEE}},
   publisher    = {Institute of Electrical and Electronics Engineers ({IEEE})},
   readstatus   = {skimmed},
@@ -218,7 +218,7 @@
   month     = {may},
   doi       = {10.1016/j.dcan.2022.04.032},
   file      = {:pdf/Groshev_2022 - Edge Robotics_ Are We Ready_ an Experimental Evaluation of Current Vision and Future Directions.pdf:PDF},
-  groups    = {survey},
+  groups    = {survey, MEC},
   publisher = {Elsevier {BV}},
 }
 
@@ -410,12 +410,16 @@
   publisher    = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
-@Misc{Jocher2020,
-  author = {Glenn Jocher},
-  title  = {YOLOv5},
-  date   = {2020-05},
-  groups = {Perception, Implementation},
-  url    = {https://github.com/ultralytics/yolov5},
+@Software{Jocher2022,
+  author    = {Glenn Jocher and Ayush Chaurasia and Alex Stoken and Jirka Borovec and NanoCode012 and Yonghye Kwon and Kalen Michael and TaoXie and Jiacong Fang and imyhxy and Lorna and Zeng Yifu and Colin Wong and Abhiram V and Diego Montes and Zhiqiang Wang and Cristi Fati and Jebastin Nadar and Laughing and UnglvKitDe and Victor Sonck and tkianai and yxNONG and Piotr Skalski and Adam Hogan and Dhruv Nair and Max Strobel and Mrinal Jain},
+  doi       = {10.5281/zenodo.7347926},
+  groups    = {Implementation},
+  month     = nov,
+  publisher = {Zenodo},
+  title     = {{ultralytics/yolov5: v7.0 - YOLOv5 SOTA Realtime Instance Segmentation}},
+  url       = {https://doi.org/10.5281/zenodo.7347926},
+  version   = {v7.0},
+  year      = {2022},
 }
 
 @Article{Raffin2021,
@@ -472,6 +476,7 @@
   volume       = {7},
   date         = {2022-05},
   doi          = {10.1126/scirobotics.abm6074},
+  file         = {:pdf/Macenski2022 - Robot Operating System 2_ Design, Architecture, and Uses in the Wild.pdf:PDF},
   groups       = {Implementation},
   journaltitle = {Science Robotics},
   publisher    = {American Association for the Advancement of Science ({AAAS})},
@@ -484,7 +489,7 @@
   month       = jun,
   date        = {2018},
   file        = {:pdf/etsi_wp28_mec_in_5G_FINAL.pdf:PDF},
-  groups      = {Implementation},
+  groups      = {Implementation, MEC},
   isbn        = {979-10-92620-22-1},
 }
 
@@ -535,6 +540,84 @@
   pages     = {2149-2154 vol.3},
   volume    = {3},
   doi       = {10.1109/IROS.2004.1389727},
+  groups    = {Implementation},
+}
+
+@InProceedings{Zhang2020,
+  author    = {Zhang, Xusheng and Shen, Ziyu and Xia, Bin and Liu, Zheng and Li, Yun},
+  booktitle = {2020 IEEE International Conference on Cluster Computing (CLUSTER)},
+  title     = {Estimating Power Consumption of Containers and Virtual Machines in Data Centers},
+  year      = {2020},
+  pages     = {288-293},
+  doi       = {10.1109/CLUSTER49012.2020.00039},
+  groups    = {Implementation},
+}
+
+@Article{Mekonnen2018,
+  author  = {Mekonnen, Tenager and Komu, Miika and Morabito, Roberto and Kauppinen, Tero and Harjula, Erkki and Koskela, Timo and Ylianttila, Mika},
+  journal = {IEEE Access},
+  title   = {Energy Consumption Analysis of Edge Orchestrated Virtualized Wireless Multimedia Sensor Networks},
+  year    = {2018},
+  pages   = {5090-5100},
+  volume  = {6},
+  doi     = {10.1109/ACCESS.2017.2783447},
+  groups  = {Implementation},
+}
+
+@InProceedings{Yousefpour2017,
+  author    = {Yousefpour, Ashkan and Ishigaki, Genya and Jue, Jason P.},
+  booktitle = {2017 IEEE International Conference on Edge Computing (EDGE)},
+  title     = {Fog Computing: Towards Minimizing Delay in the Internet of Things},
+  pages     = {17-24},
+  date      = {2017},
+  doi       = {10.1109/IEEE.EDGE.2017.12},
+  file      = {:pdf/Yousefpour2017 - Fog Computing_ Towards Minimizing Delay in the Internet of Things.pdf:PDF},
+  groups    = {MEC, FogComputing},
+}
+
+@Article{Satka2023,
+  author       = {Zenepe Satka and Mohammad Ashjaei and Hossein Fotouhi and Masoud Daneshtalab and Mikael Sjödin and Saad Mubeen},
+  title        = {A comprehensive systematic review of integration of time sensitive networking and 5G communication},
+  issn         = {1383-7621},
+  pages        = {102852},
+  volume       = {138},
+  abstract     = {Many industrial real-time applications in various domains, e.g., automotive, industrial automation, industrial IoT, and industry 4.0, require ultra-low end-to-end network latency, often in the order of 10 milliseconds or less. The IEEE 802.1 time-sensitive networking (TSN) is a set of standards that supports the required low-latency wired communication with ultra-low jitter. The flexibility of such a wired connection can be increased if it is integrated with a mobile wireless network. The fifth generation of cellular networks (5G) is capable of supporting the required levels of network latency with the Ultra-Reliable Low Latency Communication (URLLC) service. To fully utilize the potential of these two technologies (TSN and 5G) in industrial applications, seamless integration of the TSN wired-based network with the 5G wireless-based network is needed. In this article, we provide a comprehensive and well-structured snapshot of the existing research on TSN-5G integration. In this regard, we present the planning, execution, and analysis results of the systematic review. We also identify the trends, technical characteristics, and potential gaps in the state of the art, thus highlighting future research directions in the integration of TSN and 5G communication technologies. We notice that 73% of the primary studies address the time synchronization in the integration of TSN and 5G technologies, introducing approaches with an accuracy starting from the levels of hundred nanoseconds to one microsecond. Majority of primary studies aim at optimizing communication latency in their approach, which is a key quality attribute in automotive and industrial automation applications today.},
+  date         = {2023},
+  doi          = {10.1016/j.sysarc.2023.102852},
+  file         = {:pdf/Satka2023 - A Comprehensive Systematic Review of Integration of Time Sensitive Networking and 5G Communication.pdf:PDF},
+  groups       = {MEC, TSN},
+  journaltitle = {Journal of Systems Architecture},
+  keywords     = {Time-sensitive networking, TSN, 5G, URLLC, Industry 4.0},
+  url          = {https://www.sciencedirect.com/science/article/pii/S1383762123000310},
+}
+
+@InProceedings{Bonomi2012,
+  author    = {Bonomi, Flavio and Milito, Rodolfo and Zhu, Jiang and Addepalli, Sateesh},
+  booktitle = {Proceedings of the First Edition of the MCC Workshop on Mobile Cloud Computing},
+  title     = {Fog Computing and Its Role in the Internet of Things},
+  address   = {New York, NY, USA},
+  pages     = {13–16},
+  publisher = {Association for Computing Machinery},
+  series    = {MCC '12},
+  abstract  = {Fog Computing extends the Cloud Computing paradigm to the edge of the network, thus enabling a new breed of applications and services. Defining characteristics of the Fog are: a) Low latency and location awareness; b) Wide-spread geographical distribution; c) Mobility; d) Very large number of nodes, e) Predominant role of wireless access, f) Strong presence of streaming and real time applications, g) Heterogeneity. In this paper we argue that the above characteristics make the Fog the appropriate platform for a number of critical Internet of Things (IoT) services and applications, namely, Connected Vehicle, Smart Grid, Smart Cities, and, in general, Wireless Sensors and Actuators Networks (WSANs).},
+  date      = {2012},
+  doi       = {10.1145/2342509.2342513},
+  file      = {:pdf/Bonomi2012 - Fog Computing and Its Role in the Internet of Things.pdf:PDF},
+  groups    = {MEC, FogComputing},
+  isbn      = {9781450315197},
+  keywords  = {cloud computing, software defined networks, analytics, iot, wsan, real time systems, fog computing},
+  location  = {Helsinki, Finland},
+  numpages  = {4},
+}
+
+@InProceedings{Kim2018,
+  author    = {Kim, Sung and Rashid, Mohammad Mamunur and Deo, Saurabh and Perez-Ramirez, Javier and Galeev, Mikhail and Venkatesan, Ganesh and Dey, Sabyasachi and Li, William and Cavalcanti, Dave},
+  booktitle = {IEEE INFOCOM 2018 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)},
+  title     = {Demo/poster abstract: Enabling time-critical applications over next-generation 802.11 networks},
+  pages     = {1-2},
+  date      = {2018},
+  doi       = {10.1109/INFCOMW.2018.8406889},
+  file      = {:pdf/Kim2018 - Demo_poster Abstract_ Enabling Time Critical Applications Over Next Generation 802.11 Networks.pdf:PDF},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -547,8 +630,11 @@
 2 StaticGroup:Classical approaches\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:learning-based approaches\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:game theory approaches\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Task partitioning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Task partitioning\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Implementation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Perception\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Reinforcement learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MEC\;0\;1\;0x8a8a8aff\;\;Literature related Multi-access Edge Computing (MEC)\;;
+2 StaticGroup:FogComputing\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:TSN\;0\;1\;0x8a8a8aff\;\;\;;
 }
