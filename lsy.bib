@@ -1,0 +1,35 @@
+@InProceedings{McKinnon2020,
+  author    = {Christopher D. McKinnon and Angela P. Schoellig},
+  booktitle = {{Proc. of the IEEE International Conference on Robotics and Automation (ICRA)}},
+  title     = {Context-aware Cost Shaping to Reduce the Impact of Model Error in Safe, Receding Horizon Control},
+  pages     = {2386--2392},
+  abstract  = {This paper presents a method to enable a robot using stochastic Model Predictive Control (MPC) to achieve high performance on a repetitive path-following task. In particular, we consider the case where the accuracy of the model for robot dynamics varies significantly over the path–motivated by the fact that the models used in MPC must be computationally efficient, which limits their expressive power. Our approach is based on correcting the cost predicted using a simple learned dynamics model over the MPC horizon. This discourages the controller from taking actions that lead to higher cost than would have been predicted using the dynamics model. In addition, stochastic MPC provides a quantitative measure of safety by limiting the probability of violating state and input constraints over the prediction horizon. Our approach is unique in that it combines both online model learning and cost learning over the prediction horizon and is geared towards operating a robot in changing conditions. We demonstrate our algorithm in simulation and experiment on a ground robot that uses a stereo camera for localization.},
+  date      = {2020},
+  doi       = {10.1109/ICRA40945.2020.9197521},
+  file      = {:pdf/McKinnon2020 - Context Aware Cost Shaping to Reduce the Impact of Model Error in Safe, Receding Horizon Control.pdf:PDF},
+  groups    = {safe_and_robust_robot_learning},
+  urlvideo  = {https://youtu.be/xrgcO2-A9bo},
+}
+
+@Article{Helwa2019,
+  author       = {Mohamed K. Helwa and Adam Heins and Angela P. Schoellig},
+  title        = {Provably Robust Learning-Based Approach for High-Accuracy Tracking Control of {L}agrangian Systems},
+  number       = {2},
+  pages        = {1587--1594},
+  volume       = {4},
+  abstract     = {Lagrangian systems represent a wide range of robotic systems, including manipulators, wheeled and legged robots, and quadrotors. Inverse dynamics control and feed-forward linearization techniques are typically used to convert the complex nonlinear dynamics of Lagrangian systems to a set of decoupled double integrators, and then a standard, outer-loop controller can be used to calculate the commanded acceleration for the linearized system. However, these methods typically depend on having a very accurate system model, which is often not available in practice. While this challenge has been addressed in the literature using different learning approaches, most of these approaches do not provide safety guarantees in terms of stability of the learning-based control system. In this paper, we provide a novel, learning-based control approach based on Gaussian processes (GPs) that ensures both stability of the closed-loop system and high-accuracy tracking. We use GPs to approximate the error between the commanded acceleration and the actual acceleration of the system, and then use the predicted mean and variance of the GP to calculate an upper bound on the uncertainty of the linearized model. This uncertainty bound is then used in a robust, outer-loop controller to ensure stability of the overall system. Moreover, we show that the tracking error converges to a ball with a radius that can be made arbitrarily small. Furthermore, we verify the effectiveness of our approach via simulations on a 2 degree-of-freedom (DOF) planar manipulator and experimentally on a 6 DOF industrial manipulator.},
+  date         = {2019},
+  doi          = {10.1109/LRA.2019.2896728},
+  file         = {:pdf/Helwa2019 - Provably Robust Learning Based Approach for High Accuracy Tracking Control of Lagrangian Systems.pdf:PDF},
+  groups       = {safe_and_robust_robot_learning},
+  journaltitle = {{IEEE Robotics and Automation Letters}},
+  urllink      = {https://arxiv.org/pdf/1804.01031.pdf},
+  urlvideo     = {https://youtu.be/CBmZ4F79gmI},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:safe_and_robust_robot_learning\;0\;0\;0x8a8a8aff\;\;\;;
+}
