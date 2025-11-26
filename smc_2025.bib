@@ -1,0 +1,459 @@
+@InProceedings{Schippers2022,
+  author    = {Schippers, Hendrik and Schuler, Cedrik and Sliwa, Benjamin and Wietfeld, Christian},
+  booktitle = {2022 IEEE International Systems Conference (SysCon)},
+  title     = {System Modeling and Performance Evaluation of Predictive QoS for Future Tele-Operated Driving},
+  year      = {2022},
+  month     = apr,
+  publisher = {IEEE},
+  comment   = {- Uses radio environment map (REM) as input of the ML-model to extract prediction},
+  doi       = {10.1109/syscon53536.2022.9773810},
+  file      = {:pdf/Schippers2022 - System Modeling and Performance Evaluation of Predictive QoS for Future Tele Operated Driving.pdf:PDF},
+  groups    = {methods, PQoS},
+  ranking   = {rank5},
+}
+
+@InProceedings{Sliwa2021,
+  author    = {Sliwa, Benjamin and Schippers, Hendrik and Wietfeld, Christian},
+  booktitle = {2021 IEEE 4th 5G World Forum (5GWF)},
+  title     = {Machine Learning-Enabled Data Rate Prediction for 5G NSA Vehicle-to-Cloud Communications},
+  year      = {2021},
+  month     = oct,
+  publisher = {IEEE},
+  doi       = {10.1109/5gwf52925.2021.00059},
+  file      = {:pdf/Machine_Learning-Enabled_Data_Rate_Prediction_for_5G_NSA_Vehicle-to-Cloud_Communications.pdf:PDF},
+  groups    = {methods, network_quality, PQoS},
+  ranking   = {rank5},
+}
+
+@InProceedings{Schmid2018,
+  author    = {Schmid, Josef and Heß, Philipp and Höß, Alfred and Schuller, Björn W.},
+  booktitle = {2018 14th International Wireless Communications & Mobile Computing Conference (IWCMC)},
+  title     = {Passive monitoring and geo-based prediction of mobile network vehicle-to-server communication},
+  year      = {2018},
+  pages     = {1483-1488},
+  comment   = {- uses the definition "connectivity map"
+- KPIs: passive measurement, throughput measurement, PHY, GPS
+- It only uses the map to create the prediction
+- three kinds of connectivity map are introduced: based on OSM segments, based on euqidistant segments, based on grid.},
+  doi       = {10.1109/IWCMC.2018.8450395},
+  file      = {:pdf/Schmid2018 - Passive Monitoring and Geo Based Prediction of Mobile Network Vehicle to Server Communication.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {Throughput;Tools;Long Term Evolution;Global Positioning System;Monitoring;Time measurement;Servers;passive monitoring;vehicle-to-everything communication;throughput prediction;connectivity map;cellular network},
+  ranking   = {rank5},
+}
+
+@InProceedings{Schmid2019,
+  author    = {Schmid, Josef and Schneider, Mathias and Höß, Alfred and Schuller, Björn},
+  booktitle = {2019 15th International Wireless Communications & Mobile Computing Conference (IWCMC)},
+  title     = {A Comparison of AI-Based Throughput Prediction for Cellular Vehicle-To-Server Communication},
+  year      = {2019},
+  pages     = {471-476},
+  comment   = {- compared the performance of geo-based approach and ML-based approach
+- uses grid-based as representation for the "connectivity map"},
+  doi       = {10.1109/IWCMC.2019.8766567},
+  file      = {:pdf/Schmid2019 - A Comparison of AI Based Throughput Prediction for Cellular Vehicle to Server Communication.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {Buildings;Throughput;Time series analysis;Global Positioning System;Servers;Road transportation;Reliability;throughput prediction;support vector regression;connectivity map;cellular network},
+  ranking   = {rank5},
+}
+
+@InProceedings{Schmid2019a,
+  author    = {Schmid, Josef and Schneider, Mathias and HöB, Alfred and Schuller, Björn},
+  booktitle = {2019 IEEE International Conference on Connected Vehicles and Expo (ICCVE)},
+  title     = {A Deep Learning Approach for Location Independent Throughput Prediction},
+  year      = {2019},
+  pages     = {1-5},
+  doi       = {10.1109/ICCVE45908.2019.8965216},
+  file      = {:pdf/Schmid2019a - A Deep Learning Approach for Location Independent Throughput Prediction.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {throughput prediction;deep learning;cellular network},
+  ranking   = {rank5},
+}
+
+@Misc{Denizer2024,
+  author     = {Birkan Denizer and Olaf Landsiedel},
+  title      = {BandSeer: Bandwidth Prediction for Cellular Networks},
+  year       = {2024},
+  comment    = {Bi-LSTM for DL prediction
+Uses three datasets: NYU-METS, Beyond 5G, BerlinV2X
+Compared with different baselines: Informer, TPA-LSTM, ARIMA, EWMA, Shifted
+predicit multiple steps in prediction horizon},
+  doi        = {10.1109/lcn60385.2024.10639706},
+  file       = {:pdf/Denizer2024 - BandSeer_ Bandwidth Prediction for Cellular Networks.pdf:PDF},
+  groups     = {methods},
+  journal    = {2024 IEEE 49th Conference on Local Computer Networks (LCN)},
+  pages      = {1-8},
+  publisher  = {IEEE},
+  readstatus = {skimmed},
+}
+
+@Article{Palaios2023,
+  author     = {Palaios, Alexandros and Vielhaus, Christian L. and Külzer, Daniel F. and Watermann, Cara and Hernangómez, Rodrigo and Partani, Sanket and Geuer, Philipp and Krause, Anton and Sattiraju, Raja and Kasparick, Martin and Fettweis, Gerhard P. and Fitzek, Frank H. P. and Schotten, Hans D. and Stańczak, Slawomir},
+  journal    = {IEEE Access},
+  title      = {Machine Learning for QoS Prediction in Vehicular Communication: Challenges and Solution Approaches},
+  year       = {2023},
+  issn       = {2169-3536},
+  pages      = {92459--92477},
+  volume     = {11},
+  comment    = {- AI4Mobile paper, journal paper, very detailed
+- Discussed many appects of pQoS in vehicular communication
+- Points can be drawn from the conclusion:
+	- Gradient Boost can outperform NN
+	- ML models can capture the underlying principles of mobile network
+	- Cell load is an important metric},
+  doi        = {10.1109/access.2023.3303528},
+  file       = {:pdf/Palaios2023 - Machine Learning for QoS Prediction in Vehicular Communication_ Challenges and Solution Approaches.pdf:PDF},
+  groups     = {PQoS, methods, KPIs, pqos_servey},
+  priority   = {prio1},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@InProceedings{Neumeier2019,
+  author    = {Neumeier, Stefan and Walelgne, Ermias Andargie and Bajpai, Vaibhav and Ott, Jorg and Facchi, Christian},
+  booktitle = {2019 Network Traffic Measurement and Analysis Conference (TMA)},
+  title     = {Measuring the Feasibility of Teleoperated Driving in Mobile Networks},
+  year      = {2019},
+  month     = jun,
+  pages     = {113-120},
+  publisher = {IEEE},
+  doi       = {10.23919/TMA.2019.8784466},
+  file      = {:pdf/Neumeier2019a - Measuring the Feasibility of Teleoperated Driving in Mobile Networks.pdf:PDF},
+  groups    = {PQoS, network_quality},
+}
+
+@TechReport{5GAA2020,
+  author      = {{5GAA}},
+  institution = {5G Automotive Association},
+  title       = {C-V2X Use Cases Volume II: Examples and Service Level Requirements},
+  year        = {2020},
+  month       = oct,
+  note        = {[Online]. Available: https://5gaa.org/c-v2x-use-cases-volume-ii-examples-and-service-level-requirements/},
+  type        = {techreport},
+  file        = {:pdf/Association - C V2X Use Cases Volume II_Examples and Service LevelRequirements.pdf:PDF},
+  groups      = {standards},
+}
+
+@InProceedings{GutierrezEstevez2021,
+  author     = {Gutierrez-Estevez, Miguel A. and Utkovski, Zoran and Kousaridas, Apostolos and Zhou, Chan},
+  booktitle  = {2021 IEEE 4th 5G World Forum (5GWF)},
+  title      = {A Statistical Learning Framework for QoS Prediction in V2X},
+  year       = {2021},
+  month      = oct,
+  publisher  = {IEEE},
+  comment    = {Data rate prediction with realibiltiy contraints
+Evaluated in simulation
+Use "GEMV2" channel modeling to infer the communication rate (probably data rate)},
+  doi        = {10.1109/5gwf52925.2021.00084},
+  file       = {:pdf/GutierrezEstevez2021 - A Statistical Learning Framework for QoS Prediction in V2X.pdf:PDF},
+  groups     = {PQoS, methods},
+  readstatus = {skimmed},
+}
+
+@Misc{Ain2024,
+  author     = {Ain, Noor Ul and Hernangómez, Rodrigo and Palaios, Alexandros and Kasparick, Martin and Stańczak, Sławomir},
+  title      = {QoS prediction in radio vehicular environments via prior user information},
+  year       = {2024},
+  comment    = {It uses prior information (data recorded by a previous vehicle) to improve the prediction.
+Predict downlink QoS from LTE
+metrics: SNR, RSRP, RSRQ, RSSI, cell load from current vehicle or from previous vehicle},
+  copyright  = {Creative Commons Attribution 4.0 International},
+  doi        = {10.48550/ARXIV.2402.17689},
+  file       = {:pdf/Ain2024 - QoS Prediction in Radio Vehicular Environments Via Prior User Information.pdf:PDF},
+  groups     = {methods},
+  keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@InProceedings{Akselrod2017,
+  author     = {Akselrod, Mark and Becker, Nico and Fidler, Markus and Luebben, Ralf},
+  booktitle  = {2017 IEEE 86th Vehicular Technology Conference (VTC-Fall)},
+  title      = {4G LTE on the Road - What Impacts Download Speeds Most?},
+  year       = {2017},
+  month      = sep,
+  publisher  = {IEEE},
+  comment    = {Measurement campaigns in commercial LTE network
+analysis: Throughput vs (signal quaility, transport protocol, temporal factor, spatial factor)
+Still download speed
+Variation between weekdays and weekend is small},
+  doi        = {10.1109/vtcfall.2017.8288296},
+  file       = {:pdf/Akselrod2017 - 4G LTE on the Road What Impacts Download Speeds Most_.pdf:PDF},
+  groups     = {methods},
+  ranking    = {rank4},
+  readstatus = {read},
+}
+
+@InProceedings{Ide2016,
+  author     = {Ide, Christoph and Falkenberg, Robert and Kaulbars, Dennis and Wietfeld, Christian},
+  booktitle  = {2016 IEEE 83rd Vehicular Technology Conference (VTC Spring)},
+  title      = {Empirical Analysis of the Impact of LTE Downlink Channel Indicators on the Uplink Connectivity},
+  year       = {2016},
+  month      = may,
+  publisher  = {IEEE},
+  comment    = {Shows the relation between LTE downlink channel indicators and uplink prefromance (transmission time, i.e., latency)
+Able to predict hotspot (good connections). At cell edge (far away from cell), it's not poosible to map between a single connectivity indicator to the actual UL performance (in this case, latency)},
+  doi        = {10.1109/vtcspring.2016.7504211},
+  file       = {:pdf/Ide2016 - Empirical Analysis of the Impact of LTE Downlink Channel Indicators on the Uplink Connectivity.pdf:PDF},
+  groups     = {methods},
+  journal    = {2016 IEEE 83rd Vehicular Technology Conference (VTC Spring)},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Conference{Jomrich2018,
+  author       = {Florian Jomrich and Alexander Herzberger and Tobias Meuser and Björn Richerzhagen and Ralf Steinmetz and Cornelius Wille},
+  booktitle    = {Proceedings of the 4th International Conference on Vehicle Technology and Intelligent Transport Systems - Volume 1: VEHITS,},
+  title        = {Cellular Bandwidth Prediction for Highly Automated Driving - Evaluation of Machine Learning Approaches based on Real-World Data},
+  year         = {2018},
+  organization = {INSTICC},
+  pages        = {121-132},
+  publisher    = {SciTePress},
+  comment      = {DId data recording campaign
+Proposed the idea of coperate connectivity maps with ML models},
+  doi          = {10.5220/0006692501210132},
+  file         = {:pdf/Jomrich2018b - Cellular Bandwidth Prediction for Highly Automated Driving Evaluation of Machine Learning Approaches Based on Real World Data.pdf:PDF},
+  groups       = {methods},
+  isbn         = {978-989-758-293-6},
+  priority     = {prio1},
+  ranking      = {rank5},
+  readstatus   = {skimmed},
+}
+
+@Misc{Hernangomez2022,
+  author     = {Rodrigo Hernangomez and Alexandros Palaios and Gayathri Guruvayoorappan and Martin Kasparick and Noor Ul Ain and Slawomir Stanczak},
+  title      = {Online QoS estimation for vehicular radio environments},
+  year       = {2022},
+  comment    = {input metrics: SNR, RSRP, RSRQ, RSSI, Total throughput, active users, device throughput, requesteed throughput
+predicting downlink
+addresses statistical problem: concept shift/domain shift
+ARF-Reg (Adaptive Random Forest for Regression)
+Uses BerlinV2X},
+  doi        = {10.23919/eusipco55093.2022.9909612},
+  file       = {:pdf/Online_QoS_estimation_for_vehicular_radio_environments.pdf:PDF},
+  groups     = {methods},
+  journal    = {2022 30th European Signal Processing Conference (EUSIPCO)},
+  pages      = {1701-1705},
+  publisher  = {IEEE},
+  readstatus = {skimmed},
+}
+
+@Misc{Majstorovic2022,
+  author       = {Domagoj Majstorovic and Simon Hoffmann and Florian Pfab and Andreas Schimpe and Maria-Magdalena Wolf and Frank Diermeyer},
+  title        = {Survey on Teleoperation Concepts for Automated Vehicles},
+  year         = {2022},
+  doi          = {10.1109/smc53654.2022.9945267},
+  file         = {:E\:/Personal Files/Work/Promotion-FTM/papers/Majstorovic2022 - Survey on Teleoperation Concepts for Automated Vehicles.pdf:PDF},
+  groups       = {teleoperated_driving},
+  journal      = {2022 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  journaltitle = {2022 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  publisher    = {IEEE},
+  readstatus   = {skimmed},
+}
+
+@Misc{Schimpe2022,
+  author    = {Andreas Schimpe and Johannes Feiler and Simon Hoffmann and Domagoj Majstorovic and Frank Diermeyer},
+  title     = {Open Source Software for Teleoperated Driving},
+  year      = {2022},
+  doi       = {10.1109/iccve52871.2022.9742859},
+  file      = {:E\:/Personal Files/Work/Promotion-FTM/papers/Schimpe2022a - Open Source Software for Teleoperated Driving.pdf:PDF},
+  groups    = {teleoperated_driving},
+  journal   = {2022 International Conference on Connected Vehicle and Expo (ICCVE)},
+  publisher = {IEEE},
+}
+
+@Article{Boban2021,
+  author     = {Mate Boban and Marco Giordani and Michele Zorzi},
+  journal    = {IEEE Network},
+  title      = {Predictive Quality of Service: The Next Frontier for Fully Autonomous Systems},
+  year       = {2021},
+  issn       = {0890-8044},
+  number     = {6},
+  pages      = {104-110},
+  volume     = {35},
+  comment    = {Main things to take away:
+- This paper is about the quality of service prediction for autonomous system. The QoS is defined as latency, coverage, data rate (downlink/uplink)
+- The prediction focuses on the objective of the prediction, whether the QoS KPIs are fulfilled, the PQoS window, the appropriate reactions 
+- The PQoS should allow the application to continue operation with adapted functionality under upcoming QoS conditions. The IoTs and V2X applications are dicussed. 
+- This papers also trains a DNN using SINR and location and/or SINR in simulation to predict the data rate. 
+
+Merits:
+- This papers gives a good overview of the current state of the art/technology in PQoS
+
+Drawbacks:
+- As a survey paper, it does not give a good direction for future research
+- The contribution of the DNN is minimal},
+  doi        = {10.1109/mnet.001.2100237},
+  file       = {:pdf/Boban2021 - Predictive Quality of Service_ the Next Frontier for Fully Autonomous Systems.pdf:PDF},
+  groups     = {PQoS, KPIs, pqos_servey},
+  keywords   = {Computer Networks and Communications, Hardware and Architecture, Information Systems, Software},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  readstatus = {read},
+}
+
+@Misc{5GAA2019,
+  author     = {5GAA},
+  title      = {Making 5G Proactive and Predictive for the Autonomous Industry},
+  year       = {2019},
+  file       = {:pdf/5GAA2019 - Making 5G Proactive and Predictive for the Autonomous Industry.pdf:PDF},
+  groups     = {PQoS, standards, telefonica_projekt_proposal},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@InProceedings{Schimpe2021,
+  author     = {Schimpe, Andreas and Hoffmann, Simon and Diermeyer, Frank},
+  booktitle  = {2021 IEEE Intelligent Vehicles Symposium Workshops (IV Workshops)},
+  title      = {Adaptive Video Configuration and Bitrate Allocation for Teleoperated Vehicles},
+  year       = {2021},
+  month      = jul,
+  publisher  = {IEEE},
+  doi        = {10.1109/ivworkshops54471.2021.9669258},
+  file       = {:pdf/Schimpe2021 - Adaptive Video Configuration and Bitrate Allocation for Teleoperated Vehicles.pdf:PDF},
+  groups     = {PQoS, use_case},
+  priority   = {prio1},
+  ranking    = {rank3},
+  readstatus = {read},
+}
+
+@Article{Kousaridas2021,
+  author     = {Apostolos Kousaridas and Ramya P. Manjunath and Jose Perdomo and Chan Zhou and Ernst Zielinski and Steffen Schmitz and Andreas Pfadler},
+  journal    = {IEEE Communications Magazine},
+  title      = {QoS Prediction for 5G Connected and Automated Driving},
+  year       = {2021},
+  issn       = {0163-6804},
+  number     = {9},
+  pages      = {58-64},
+  volume     = {59},
+  comment    = {This paper lists the possiblities of PQoS in ToD. However, it still assumes that the PQoS is implemented from the network side, not the user side.
+It shed lights on the vehicle deceleration (emergency braking) and its relation to the latency.},
+  doi        = {10.1109/mcom.110.2100042},
+  file       = {:pdf/Kousaridas2021 - QoS Prediction for 5G Connected and Automated Driving.pdf:PDF},
+  groups     = {PQoS, pqos_servey, use_case},
+  keywords   = {Electrical and Electronic Engineering, Computer Networks and Communications, Computer Science Applications},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  readstatus = {skimmed},
+}
+
+@Article{Blasco2023,
+  author     = {Blasco, Ricardo and Ferrante, Guido Carlo and Watermann, Cara and Palaios, Alexandros},
+  journal    = {IEEE Communications Magazine},
+  title      = {Predictive Quality of Service in Cellular Networks: Challenges, Framework, and Application in Vehicular Communications},
+  year       = {2023},
+  issn       = {1558-1896},
+  month      = mar,
+  number     = {3},
+  pages      = {44--49},
+  volume     = {61},
+  comment    = {Take-aways:
+- dsicusses the challenges in quality of service prediction: horizon definition, uncertainty in prediction, data collection.
+- points out that uncertainty comes from two sources: intrisinc and model
+- suggest there are two ways to predict the network condition: stateless (map-based) vs stateful approach
+- proposes a framework that uses a statistical model to describe the "stateful" network condition},
+  doi        = {10.1109/mcom.004.2200180},
+  file       = {:pdf/Blasco2023 - Predictive Quality of Service in Cellular Networks_ Challenges, Framework, and Application in Vehicular Communications.pdf:PDF},
+  groups     = {pqos_servey, PQoS},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@InProceedings{Kulzer2021,
+  author    = {Kulzer, Daniel F. and Kasparick, Martin and Palaios, Alexandros and Sattiraju, Raja and Ramos-Cantor, Oscar D. and Wieruch, Dennis and Tchouankem, Hugues and Gottsch, Fabian and Geuer, Philipp and Schwardmann, Jens and Fettweis, Gerhard and Schotten, Hans D. and Stanczak, Slawomir},
+  booktitle = {2021 IEEE 93rd Vehicular Technology Conference (VTC2021-Spring)},
+  title     = {AI4Mobile: Use Cases and Challenges of AI-based QoS Prediction for High-Mobility Scenarios},
+  year      = {2021},
+  month     = apr,
+  publisher = {IEEE},
+  doi       = {10.1109/vtc2021-spring51267.2021.9449059},
+  file      = {:pdf/Kulzer2021c - AI4Mobile_ Use Cases and Challenges of AI Based QoS Prediction for High Mobility Scenarios.pdf:PDF},
+  groups    = {pqos_servey},
+}
+
+@TechReport{SAEInternational2021,
+  author      = {{SAE International}},
+  institution = {SAE International},
+  title       = {{Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles}},
+  year        = {2021},
+  month       = {April},
+  note        = {Revised April 2021, originally issued January 2014},
+  number      = {J3016_202104},
+  doi         = {10.4271/J3016_202104},
+  groups      = {standards},
+  priority    = {prio3},
+  url         = {https://doi.org/10.4271/J3016_202104},
+}
+
+@TechReport{ETSI2024,
+  author  = {{ETSI}},
+  title   = {{ETSI TS 129 520 V17.14.0: 5G System (5GS); Network Data Analytics Services; Stage 3 (3GPP TS 29.520)}},
+  year    = {2024},
+  month   = sep,
+  note    = {Available at \url{https://www.etsi.org/deliver/etsi_ts/129500_129599/129520/17.08.00_60/ts_129520v170800p.pdf}},
+  number  = {TS 129 520},
+  groups  = {standards},
+  school  = {{European Telecommunications Standards Institute (ETSI)}},
+  version = {V17.8.0},
+}
+
+@Misc{Karle2023,
+  author    = {Karle, Phillip and Betz, Tobias and Bosk, Marcin and Fent, Felix and Gehrke, Nils and Geisslinger, Maximilian and Gressenbuch, Luis and Hafemann, Philipp and Huber, Sebastian and Hübner, Maximilian and Huch, Sebastian and Kaljavesi, Gemb and Kerbl, Tobias and Kulmer, Dominik and Mascetta, Tobias and Maierhofer, Sebastian and Pfab, Florian and Rezabek, Filip and Rivera, Esteban and Sagmeister, Simon and Seidlitz, Leander and Sauerbeck, Florian and Tahiraj, Ilir and Trauth, Rainer and Uhlemann, Nico and Würsching, Gerald and Zarrouki, Baha and Althoff, Matthias and Betz, Johannes and Bengler, Klaus and Carle, Georg and Diermeyer, Frank and Ott, Jörg and Lienkamp, Markus},
+  title     = {EDGAR: An Autonomous Driving Research Platform -- From Feature Development to Real-World Application},
+  year      = {2023},
+  copyright = {Creative Commons Attribution 4.0 International},
+  doi       = {10.48550/ARXIV.2309.15492},
+  keywords  = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
+}
+
+@Misc{iperf3,
+  author       = {Esnet},
+  howpublished = {\url{https://github.com/esnet/iperf}},
+  note         = {Accessed: 2025-04-13},
+  title        = {{iPerf3: A TCP, UDP, and SCTP network bandwidth measurement tool}},
+  year         = {2019},
+}
+
+@Article{Chen2016,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  journal   = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  title     = {XGBoost: A scalable tree boosting system},
+  year      = {2016},
+  pages     = {785--794},
+  doi       = {10.1145/2939672.2939785},
+  publisher = {ACM},
+}
+
+@Article{Pedregosa2011,
+  author  = {Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and others},
+  journal = {Journal of Machine Learning Research},
+  title   = {Scikit-learn: Machine learning in Python},
+  year    = {2011},
+  pages   = {2825--2830},
+  volume  = {12},
+}
+
+@Misc{Su2025,
+  author   = {Su, Xiyan},
+  title    = {{FTM Vehicular Network Data}},
+  year     = {2025},
+  abstract = {This dataset contains network data recorded from the experimental vehicle EDGAR (Execellent Driving GARching) over a period of 3 months. The data within this dataset can be divided into two categories: the physical layer data and the application layer data. The physical layer data are recorded with the on-board 5G router and indicates the connection quality of the Radio Access Network (RAN). The application layer data is recorded using various software tools and indicates the End-to-End (E2E) connection quality between the EDGAR and the server on TUM campus.},
+  doi      = {10.14459/2025mp1776662.001},
+  keywords = {teleoperated driving; autonomous driving; vehicular network; cellular network; 4G-LTE},
+  type     = {Dataset},
+}
+
+@Book{Bishop2006,
+  author    = {Bishop, Christopher M.},
+  publisher = {Springer},
+  title     = {Pattern Recognition and Machine Learning},
+  year      = {2006},
+  address   = {New York},
+  isbn      = {978-0387-31073-2},
+  groups    = {book},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

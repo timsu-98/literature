@@ -1645,7 +1645,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 @Misc{Majstorovic2022,
   author       = {Domagoj Majstorovic and Simon Hoffmann and Florian Pfab and Andreas Schimpe and Maria-Magdalena Wolf and Frank Diermeyer},
   title        = {Survey on Teleoperation Concepts for Automated Vehicles},
-  date         = {2022},
+  year         = {2022},
   doi          = {10.1109/smc53654.2022.9945267},
   file         = {:E\:/Personal Files/Work/Promotion-FTM/papers/Majstorovic2022 - Survey on Teleoperation Concepts for Automated Vehicles.pdf:PDF},
   groups       = {teleoperated_driving},
@@ -1738,15 +1738,15 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   readstatus = {skimmed},
 }
 
-@Misc{Schimpe2022a,
-  author       = {Andreas Schimpe and Johannes Feiler and Simon Hoffmann and Domagoj Majstorovic and Frank Diermeyer},
-  title        = {Open Source Software for Teleoperated Driving},
-  date         = {2022},
-  doi          = {10.1109/iccve52871.2022.9742859},
-  file         = {:E\:/Personal Files/Work/Promotion-FTM/papers/Schimpe2022a - Open Source Software for Teleoperated Driving.pdf:PDF},
-  groups       = {teleoperated_driving},
-  journaltitle = {2022 International Conference on Connected Vehicle and Expo (ICCVE)},
-  publisher    = {IEEE},
+@Misc{Schimpe2022,
+  author    = {Andreas Schimpe and Johannes Feiler and Simon Hoffmann and Domagoj Majstorovic and Frank Diermeyer},
+  title     = {Open Source Software for Teleoperated Driving},
+  year      = {2022},
+  doi       = {10.1109/iccve52871.2022.9742859},
+  file      = {:E\:/Personal Files/Work/Promotion-FTM/papers/Schimpe2022a - Open Source Software for Teleoperated Driving.pdf:PDF},
+  groups    = {teleoperated_driving},
+  journal   = {2022 International Conference on Connected Vehicle and Expo (ICCVE)},
+  publisher = {IEEE},
 }
 
 @Misc{Hoffmann2022a,
@@ -1769,12 +1769,24 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number     = {6},
   pages      = {104-110},
   volume     = {35},
+  comment    = {Main things to take away:
+- This paper is about the quality of service prediction for autonomous system. The QoS is defined as latency, coverage, data rate (downlink/uplink)
+- The prediction focuses on the objective of the prediction, whether the QoS KPIs are fulfilled, the PQoS window, the appropriate reactions 
+- The PQoS should allow the application to continue operation with adapted functionality under upcoming QoS conditions. The IoTs and V2X applications are dicussed. 
+- This papers also trains a DNN using SINR and location and/or SINR in simulation to predict the data rate. 
+
+Merits:
+- This papers gives a good overview of the current state of the art/technology in PQoS
+
+Drawbacks:
+- As a survey paper, it does not give a good direction for future research
+- The contribution of the DNN is minimal},
   doi        = {10.1109/mnet.001.2100237},
   file       = {:pdf/Boban2021 - Predictive Quality of Service_ the Next Frontier for Fully Autonomous Systems.pdf:PDF},
-  groups     = {PQoS, KPIs},
+  groups     = {PQoS, KPIs, pqos_servey},
   keywords   = {Computer Networks and Communications, Hardware and Architecture, Information Systems, Software},
   publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
-  readstatus = {skimmed},
+  readstatus = {read},
 }
 
 @Misc{5GAA2019,
@@ -1782,7 +1794,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   title      = {Making 5G Proactive and Predictive for the Autonomous Industry},
   year       = {2019},
   file       = {:pdf/5GAA2019 - Making 5G Proactive and Predictive for the Autonomous Industry.pdf:PDF},
-  groups     = {PQoS, standards},
+  groups     = {PQoS, standards, telefonica_projekt_proposal},
   ranking    = {rank5},
   readstatus = {read},
 }
@@ -1797,6 +1809,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups     = {PQoS},
   journal    = {2021 IEEE 4th 5G World Forum (5GWF)},
   publisher  = {IEEE},
+  ranking    = {rank5},
   readstatus = {skimmed},
 }
 
@@ -1825,41 +1838,35 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @InProceedings{Barmpounakis2021,
-  author    = {Barmpounakis, Sokratis and Magoula, Lina and Koursioumpas, Nikolaos and Khalili, Ramin and Perdomo, Jose Mauricio and Manjunath, Ramya Panthangi},
-  booktitle = {2021 IEEE 4th 5G World Forum (5GWF)},
-  title     = {LSTM-based QoS prediction for 5G-enabled Connected and Automated Mobility applications},
-  year      = {2021},
-  month     = oct,
-  publisher = {IEEE},
-  doi       = {10.1109/5gwf52925.2021.00083},
-  file      = {:pdf/Barmpounakis2021 - LSTM Based QoS Prediction for 5G Enabled Connected and Automated Mobility Applications.pdf:PDF},
-  groups    = {PQoS, methods},
+  author     = {Barmpounakis, Sokratis and Magoula, Lina and Koursioumpas, Nikolaos and Khalili, Ramin and Perdomo, Jose Mauricio and Manjunath, Ramya Panthangi},
+  booktitle  = {2021 IEEE 4th 5G World Forum (5GWF)},
+  title      = {LSTM-based QoS prediction for 5G-enabled Connected and Automated Mobility applications},
+  year       = {2021},
+  month      = oct,
+  publisher  = {IEEE},
+  comment    = {evaluation in simulation
+UL prediction
+input metrics: gps, speed, distance v2cell, cell load, uplink throughput},
+  doi        = {10.1109/5gwf52925.2021.00083},
+  file       = {:pdf/Barmpounakis2021 - LSTM Based QoS Prediction for 5G Enabled Connected and Automated Mobility Applications.pdf:PDF},
+  groups     = {PQoS, methods},
+  readstatus = {skimmed},
 }
 
 @InProceedings{GutierrezEstevez2021,
-  author    = {Gutierrez-Estevez, Miguel A. and Utkovski, Zoran and Kousaridas, Apostolos and Zhou, Chan},
-  booktitle = {2021 IEEE 4th 5G World Forum (5GWF)},
-  title     = {A Statistical Learning Framework for QoS Prediction in V2X},
-  year      = {2021},
-  month     = oct,
-  publisher = {IEEE},
-  doi       = {10.1109/5gwf52925.2021.00084},
-  file      = {:pdf/GutierrezEstevez2021 - A Statistical Learning Framework for QoS Prediction in V2X.pdf:PDF},
-  groups    = {PQoS, methods},
-}
-
-@Article{Palaios2023,
-  author    = {Palaios, Alexandros and Vielhaus, Christian L. and Külzer, Daniel F. and Watermann, Cara and Hernangómez, Rodrigo and Partani, Sanket and Geuer, Philipp and Krause, Anton and Sattiraju, Raja and Kasparick, Martin and Fettweis, Gerhard P. and Fitzek, Frank H. P. and Schotten, Hans D. and Stańczak, Slawomir},
-  journal   = {IEEE Access},
-  title     = {Machine Learning for QoS Prediction in Vehicular Communication: Challenges and Solution Approaches},
-  year      = {2023},
-  issn      = {2169-3536},
-  pages     = {92459--92477},
-  volume    = {11},
-  doi       = {10.1109/access.2023.3303528},
-  file      = {:pdf/Palaios2023 - Machine Learning for QoS Prediction in Vehicular Communication_ Challenges and Solution Approaches.pdf:PDF},
-  groups    = {PQoS, methods, KPIs},
-  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  author     = {Gutierrez-Estevez, Miguel A. and Utkovski, Zoran and Kousaridas, Apostolos and Zhou, Chan},
+  booktitle  = {2021 IEEE 4th 5G World Forum (5GWF)},
+  title      = {A Statistical Learning Framework for QoS Prediction in V2X},
+  year       = {2021},
+  month      = oct,
+  publisher  = {IEEE},
+  comment    = {Data rate prediction with realibiltiy contraints
+Evaluated in simulation
+Use "GEMV2" channel modeling to infer the communication rate (probably data rate)},
+  doi        = {10.1109/5gwf52925.2021.00084},
+  file       = {:pdf/GutierrezEstevez2021 - A Statistical Learning Framework for QoS Prediction in V2X.pdf:PDF},
+  groups     = {PQoS, methods},
+  readstatus = {skimmed},
 }
 
 @InProceedings{Palaios2021a,
@@ -1872,6 +1879,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/pimrc50174.2021.9569490},
   file      = {:pdf/Palaios2021a - Network under Control_ Multi Vehicle E2E Measurements for AI Based QoS Prediction.pdf:PDF},
   groups    = {PQoS},
+  ranking   = {rank5},
 }
 
 @InProceedings{Schimpe2021,
@@ -1895,7 +1903,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   year      = {2022},
   doi       = {10.1109/meditcom55741.2022.9928745},
   file      = {:pdf/Kakkavas2022 - Teleoperated Support for Remote Driving Over 5G Mobile Communications.pdf:PDF},
-  groups    = {PQoS},
+  groups    = {PQoS, teleoperated_driving},
   journal   = {2022 IEEE International Mediterranean Conference on Communications and Networking (MeditCom)},
   publisher = {IEEE},
 }
@@ -1936,34 +1944,44 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @Article{Kousaridas2021,
-  author    = {Apostolos Kousaridas and Ramya P. Manjunath and Jose Perdomo and Chan Zhou and Ernst Zielinski and Steffen Schmitz and Andreas Pfadler},
-  journal   = {IEEE Communications Magazine},
-  title     = {QoS Prediction for 5G Connected and Automated Driving},
-  year      = {2021},
-  issn      = {0163-6804},
-  number    = {9},
-  pages     = {58-64},
-  volume    = {59},
-  doi       = {10.1109/mcom.110.2100042},
-  file      = {:pdf/Kousaridas2021 - QoS Prediction for 5G Connected and Automated Driving.pdf:PDF},
-  groups    = {PQoS},
-  keywords  = {Electrical and Electronic Engineering, Computer Networks and Communications, Computer Science Applications},
-  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  author     = {Apostolos Kousaridas and Ramya P. Manjunath and Jose Perdomo and Chan Zhou and Ernst Zielinski and Steffen Schmitz and Andreas Pfadler},
+  journal    = {IEEE Communications Magazine},
+  title      = {QoS Prediction for 5G Connected and Automated Driving},
+  year       = {2021},
+  issn       = {0163-6804},
+  number     = {9},
+  pages      = {58-64},
+  volume     = {59},
+  comment    = {This paper lists the possiblities of PQoS in ToD. However, it still assumes that the PQoS is implemented from the network side, not the user side.
+It shed lights on the vehicle deceleration (emergency braking) and its relation to the latency.},
+  doi        = {10.1109/mcom.110.2100042},
+  file       = {:pdf/Kousaridas2021 - QoS Prediction for 5G Connected and Automated Driving.pdf:PDF},
+  groups     = {PQoS, pqos_servey, use_case},
+  keywords   = {Electrical and Electronic Engineering, Computer Networks and Communications, Computer Science Applications},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  readstatus = {skimmed},
 }
 
 @Article{Barmpounakis2022,
-  author    = {Sokratis Barmpounakis and Nikolaos Maroulis and Nikolaos Koursioumpas and Apostolos Kousaridas and Angeliki Kalamari and Panagiotis Kontopoulos and Nancy Alonistioti},
-  journal   = {Computer Networks},
-  title     = {AI-driven, QoS prediction for V2X communications in beyond 5G systems},
-  year      = {2022},
-  issn      = {1389-1286},
-  pages     = {109341},
-  volume    = {217},
-  doi       = {10.1016/j.comnet.2022.109341},
-  file      = {:pdf/Barmpounakis2022 - AI Driven, QoS Prediction for V2X Communications in beyond 5G Systems.pdf:PDF},
-  groups    = {PQoS, methods},
-  keywords  = {Computer Networks and Communications},
-  publisher = {Elsevier BV},
+  author     = {Sokratis Barmpounakis and Nikolaos Maroulis and Nikolaos Koursioumpas and Apostolos Kousaridas and Angeliki Kalamari and Panagiotis Kontopoulos and Nancy Alonistioti},
+  journal    = {Computer Networks},
+  title      = {AI-driven, QoS prediction for V2X communications in beyond 5G systems},
+  year       = {2022},
+  issn       = {1389-1286},
+  pages      = {109341},
+  volume     = {217},
+  comment    = {take-aways:
+- this paper presents a PQoS algorithm called "PreQoS" for V2X use-case and introduces a spatio-temporal modeling approach "Map-as-a-Grid" (MaaG)
+- introduces 5 categories of input context parameters for pQoS (mobility information, radio parameters, RAN, E2E network performance, application specific information)
+- evaluates the algorithm with ns-3 and sumo based simulation},
+  doi        = {10.1016/j.comnet.2022.109341},
+  file       = {:pdf/Barmpounakis2022 - AI Driven, QoS Prediction for V2X Communications in beyond 5G Systems.pdf:PDF},
+  groups     = {PQoS, methods},
+  keywords   = {Computer Networks and Communications},
+  priority   = {prio1},
+  publisher  = {Elsevier BV},
+  ranking    = {rank5},
+  readstatus = {skimmed},
 }
 
 @Misc{Zugno2020,
@@ -1987,7 +2005,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {AutomotiveUI ’21},
   doi        = {10.1145/3473682.3480271},
   file       = {:pdf/Kettwich2021 - What If the Automation Fails_ – a Classification of Scenarios in Teleoperated Driving.pdf:PDF},
-  groups     = {KPI & Failure cases},
+  groups     = {KPI & Failure cases, teleoperated_driving},
 }
 
 @InProceedings{Neumeier2019,
@@ -2011,9 +2029,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {9},
   pages     = {12287-12303},
   volume    = {81},
+  comment   = {- Project 5G-MOBIX
+- defines quality model to evaluate the QoE for teleloperation driving},
   doi       = {10.1007/s11042-021-11251-x},
   file      = {:pdf/Perez2022 - A Parametric Quality Model to Evaluate the Performance of Tele Operated Driving Services Over 5G Networks.pdf:PDF},
-  groups    = {network_quality, PQoS, methods},
+  groups    = {network_quality, PQoS,},
   keywords  = {Computer Networks and Communications, Hardware and Architecture, Media Technology, Software},
   publisher = {Springer Science and Business Media LLC},
 }
@@ -2025,21 +2045,36 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   year      = {2022},
   month     = apr,
   publisher = {IEEE},
+  comment   = {- Uses radio environment map (REM) as input of the ML-model to extract prediction},
   doi       = {10.1109/syscon53536.2022.9773810},
   file      = {:pdf/Schippers2022 - System Modeling and Performance Evaluation of Predictive QoS for Future Tele Operated Driving.pdf:PDF},
   groups    = {methods, PQoS},
+  ranking   = {rank5},
 }
 
 @InProceedings{Mason2022,
-  author    = {Mason, Federico and Drago, Matteo and Zugno, Tommaso and Giordani, Marco and Boban, Mate and Zorzi, Michele},
-  booktitle = {2022 IEEE Wireless Communications and Networking Conference (WCNC)},
-  title     = {A Reinforcement Learning Framework for PQoS in a Teleoperated Driving Scenario},
-  year      = {2022},
-  month     = apr,
-  publisher = {IEEE},
-  doi       = {10.1109/wcnc51071.2022.9771590},
-  file      = {:pdf/Mason2022 - A Reinforcement Learning Framework for PQoS in a Teleoperated Driving Scenario.pdf:PDF},
-  groups    = {methods, PQoS, simulation},
+  author     = {Mason, Federico and Drago, Matteo and Zugno, Tommaso and Giordani, Marco and Boban, Mate and Zorzi, Michele},
+  booktitle  = {2022 IEEE Wireless Communications and Networking Conference (WCNC)},
+  title      = {A Reinforcement Learning Framework for PQoS in a Teleoperated Driving Scenario},
+  year       = {2022},
+  month      = apr,
+  publisher  = {IEEE},
+  comment    = {Main things to take away:
+- integrate a RL-framework into RAN for PQoS by focusing on the design of the reward function and validates in ns-3 simulation
+- The agent takes context information, trajectory of the users, traffic information, network metrics as input
+- The agent is deployed at the base station side with the action space that controls all the vehicles connected to the base station
+- The actions of the agent is how to compress the LiDAR data. The more compressed the data are, the higher the error is.
+
+Merits:
+- The methodology is well explained
+
+Drawbacks:
+- The experiment is not clearly explained},
+  doi        = {10.1109/wcnc51071.2022.9771590},
+  file       = {:pdf/Mason2022 - A Reinforcement Learning Framework for PQoS in a Teleoperated Driving Scenario.pdf:PDF},
+  groups     = {methods, PQoS, simulation},
+  ranking    = {rank3},
+  readstatus = {skimmed},
 }
 
 @InProceedings{Neumeier2020,
@@ -2165,23 +2200,34 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   issn      = {1389-1286},
   pages     = {243-254},
   volume    = {145},
+  comment   = {- Predict DL speed for video content service (which data-rate to use to send video to cell phones)
+- input features: PHY, context (indoor, outdoor via GPS)
+- not relevant for pqos paper},
   doi       = {10.1016/j.comnet.2018.09.002},
   file      = {:pdf/Samba2018 - Predicting File Downloading Time in Cellular Network_ Large Scale Analysis of Machine Learning Approaches.pdf:PDF},
   groups    = {methods, PQoS},
   keywords  = {Computer Networks and Communications},
   publisher = {Elsevier BV},
+  ranking   = {rank1},
 }
 
 @Article{Kuelzer2024,
   author    = {Külzer, Daniel Fabian},
   title     = {Quality of service provisioning optimization for coexisting services in vehicular communications via anticipatory networking},
   year      = {2024},
+  comment   = {Doctorate dissertation
+Predicting: latency and PHY
+Latency: E2E learning-based approach
+PHY: CDI
+Propose resource allocation frameworks},
   doi       = {10.14279/DEPOSITONCE-19706},
   file      = {:pdf/Kuelzer2024 - Quality of Service Provisioning Optimization for Coexisting Services in Vehicular Communications Via Anticipatory Networking.pdf:PDF},
   groups    = {methods, PQoS},
   keywords  = {600 Technik, Medizin, angewandte Wissenschaften::600 Technik::600 Technik, Technologie, quality of service prediction, passive probing, channel distribution information, density estimation, interference coordination, multi-vehicle measurements, predictive resource allocation, swarm intelligence, Dienstgüteprädiktion, passiv gesammelte Daten, Kanalverteilungsinformationskarte, Wahrscheinlichkeitsverteilungsschätzung, Interferenzkoordination, Fahrzeugemesskampagne, prädiktive Ressourcenverteilung, Schwarmintelligenz},
   language  = {en},
+  priority  = {prio3},
   publisher = {Technische Universität Berlin},
+  ranking   = {rank5},
 }
 
 @Misc{Jaeger2023,
@@ -2241,18 +2287,21 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @Article{Garcia_2017,
-  author    = {Garcia, Juan C. and Patrao, Bruno and Almeida, Luis and Perez, Javier and Menezes, Paulo and Dias, Jorge and Sanz, Pedro J.},
-  journal   = {IEEE Computer Graphics and Applications},
-  title     = {A Natural Interface for Remote Operation of Underwater Robots},
-  year      = {2017},
-  issn      = {0272-1716},
-  month     = jan,
-  number    = {1},
-  pages     = {34--43},
-  volume    = {37},
-  doi       = {10.1109/mcg.2015.118},
-  groups    = {Remote Operation, Suchbegriffe},
-  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  author     = {Garcia, Juan C. and Patrao, Bruno and Almeida, Luis and Perez, Javier and Menezes, Paulo and Dias, Jorge and Sanz, Pedro J.},
+  journal    = {IEEE Computer Graphics and Applications},
+  title      = {A Natural Interface for Remote Operation of Underwater Robots},
+  year       = {2017},
+  issn       = {0272-1716},
+  month      = jan,
+  number     = {1},
+  pages      = {34--43},
+  volume     = {37},
+  comment    = {navigtion time, collision, travelled distance},
+  doi        = {10.1109/mcg.2015.118},
+  groups     = {Remote Operation, Suchbegriffe},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  readstatus = {read},
+  relevance  = {yes},
 }
 
 @Misc{Mitsuishi,
@@ -2263,6 +2312,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Remote Operation, Suchbegriffe},
   journal   = {Proceedings. 1998 IEEE International Conference on Robotics and Automation (Cat. No.98CH36146)},
   publisher = {IEEE},
+  relevance = {no},
 }
 
 @Misc{,
@@ -2273,6 +2323,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Remote Operation, Suchbegriffe},
   journal   = {Proceedings of the eighth symposium on Operating systems principles - SOSP '81},
   publisher = {ACM Press},
+  relevance = {no},
 }
 
 @Misc{,
@@ -2282,27 +2333,30 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Remote Operation, Suchbegriffe},
   journal   = {Proceedings.,10th International Conference on Distributed Computing Systems},
   publisher = {IEEE Comput. Soc. Press},
+  relevance = {no},
 }
 
 @Article{Gustavsson838038,
-  author   = {Gustavsson, Ingvar and Zackrisson, Johan and {\AA}kesson, Henrik and H{\aa}kansson, Lars and Claesson, Ingvar and Lag{\"o}, Thomas L},
-  journal  = {International Journal of Online Engineering},
-  title    = {Remote Operation and Control of Traditional Laboratory Equipment},
-  year     = {2006},
-  note     = {Open Access Journal},
-  number   = {1},
-  pages    = {1--8},
-  volume   = {2},
-  abstract = {Physical experiments are indispensable for developing skills to deal with physical processes and instrumentation. The Internet provides new possibilities for universities and other teaching organizations to share laboratories and increase the number of lab sessions without incurring any increase in cost. Blekinge Institute of Technology in Sweden has opened a traditional electronics laboratory for remote operation and control 24/7; it is the first of its kind. The laboratory is equipped with a unique virtual interface enabling students to recognize on their own computer screen the desktop instruments and the breadboard they have already used in the local laboratory. The research is focused on what is perceived to be the greatest challenge, i.e. to give the student laboratory experience that is as genuine as possible despite the lack of direct contact with the actual lab hardware at the same time as it allows the teacher to use existing equipment and teaching material. The goal is to produce an open international standard.},
-  groups   = {Remote Operation, Suchbegriffe},
-  keywords = {Electronics, Engineering Education, Remote labs, Online Engineering. Signal Processing, Vibration},
-  url      = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:838038&dswid=-3571},
+  author    = {Gustavsson, Ingvar and Zackrisson, Johan and {\AA}kesson, Henrik and H{\aa}kansson, Lars and Claesson, Ingvar and Lag{\"o}, Thomas L},
+  journal   = {International Journal of Online Engineering},
+  title     = {Remote Operation and Control of Traditional Laboratory Equipment},
+  year      = {2006},
+  note      = {Open Access Journal},
+  number    = {1},
+  pages     = {1--8},
+  volume    = {2},
+  abstract  = {Physical experiments are indispensable for developing skills to deal with physical processes and instrumentation. The Internet provides new possibilities for universities and other teaching organizations to share laboratories and increase the number of lab sessions without incurring any increase in cost. Blekinge Institute of Technology in Sweden has opened a traditional electronics laboratory for remote operation and control 24/7; it is the first of its kind. The laboratory is equipped with a unique virtual interface enabling students to recognize on their own computer screen the desktop instruments and the breadboard they have already used in the local laboratory. The research is focused on what is perceived to be the greatest challenge, i.e. to give the student laboratory experience that is as genuine as possible despite the lack of direct contact with the actual lab hardware at the same time as it allows the teacher to use existing equipment and teaching material. The goal is to produce an open international standard.},
+  groups    = {Remote Operation, Suchbegriffe},
+  keywords  = {Electronics, Engineering Education, Remote labs, Online Engineering. Signal Processing, Vibration},
+  relevance = {no},
+  url       = {https://www.diva-portal.org/smash/record.jsf?pid=diva2:838038&dswid=-3571},
 }
 
 @Article{,
-  author = {Brian Fisher: Sabine Schnittger},
-  title  = {Autonomous and RemoteOperation Technologiesin the Mining Industry},
-  groups = {Remote Operation, Suchbegriffe},
+  author    = {Brian Fisher: Sabine Schnittger},
+  title     = {Autonomous and RemoteOperation Technologiesin the Mining Industry},
+  groups    = {Remote Operation, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{,
@@ -2313,10 +2367,12 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   issn      = {0965-8564},
   pages     = {14-26},
   volume    = {142},
+  comment   = {cost},
   doi       = {10.1016/j.tra.2020.09.024},
   groups    = {Remote Operation, Suchbegriffe},
   keywords  = {Management Science and Operations Research, Transportation, Civil and Structural Engineering, Business, Management and Accounting (miscellaneous), Aerospace Engineering},
   publisher = {Elsevier BV},
+  relevance = {yes},
 }
 
 @Misc{,
@@ -2326,6 +2382,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Remote Operation, Suchbegriffe},
   journal   = {Proceedings 2000 ICRA. Millennium Conference. IEEE International Conference on Robotics and Automation. Symposia Proceedings (Cat. No.00CH37065)},
   publisher = {IEEE},
+  relevance = {yes},
 }
 
 @Article{Jara2011,
@@ -2351,10 +2408,12 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {5},
   pages     = {26},
   volume    = {5},
+  comment   = {situation awareness, usability},
   doi       = {10.3390/mti5050026},
   groups    = {Remote Operation, Suchbegriffe},
   keywords  = {Computer Networks and Communications, Computer Science Applications, Human-Computer Interaction, Neuroscience (miscellaneous)},
   publisher = {MDPI AG},
+  relevance = {yes},
 }
 
 @Article{Kondraske_1993,
@@ -2369,6 +2428,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/70.258062},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @InProceedings{Stegagno_2014,
@@ -2380,6 +2440,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/icra.2014.6907419},
   groups    = {Remote Operation, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{Stamos_1990,
@@ -2395,20 +2456,22 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1145/88616.88631},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Association for Computing Machinery (ACM)},
+  relevance = {no},
 }
 
 @Article{,
-  author    = {Clare Mutzenich and Szonya Durant and Shaun Helman and Polly Dalton},
-  journal   = {Cognitive Research: Principles and Implications},
-  title     = {Updating our understanding of situation awareness in relation to remote operators of autonomous vehicles},
-  year      = {2021},
-  issn      = {2365-7464},
-  number    = {1},
-  volume    = {6},
-  doi       = {10.1186/s41235-021-00271-8},
-  groups    = {Remote Operation, Suchbegriffe},
-  keywords  = {Cognitive Neuroscience, Experimental and Cognitive Psychology},
-  publisher = {Springer Science and Business Media LLC},
+  author     = {Clare Mutzenich and Szonya Durant and Shaun Helman and Polly Dalton},
+  journal    = {Cognitive Research: Principles and Implications},
+  title      = {Updating our understanding of situation awareness in relation to remote operators of autonomous vehicles},
+  year       = {2021},
+  issn       = {2365-7464},
+  number     = {1},
+  volume     = {6},
+  doi        = {10.1186/s41235-021-00271-8},
+  groups     = {Remote Operation, Suchbegriffe},
+  keywords   = {Cognitive Neuroscience, Experimental and Cognitive Psychology},
+  publisher  = {Springer Science and Business Media LLC},
+  readstatus = {yes},
 }
 
 @InProceedings{Nak_Young_Chong,
@@ -2418,8 +2481,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher  = {IEEE},
   series     = {ROBOT-00},
   collection = {ROBOT-00},
+  comment    = {delay},
   doi        = {10.1109/robot.2000.845146},
   groups     = {Remote Operation, Suchbegriffe},
+  relevance  = {yes},
 }
 
 @InProceedings{Gritsuk_2018,
@@ -2487,6 +2552,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/ic3i.2016.7917983},
   groups    = {Remote Operation, Suchbegriffe},
+  relevance = {no},
 }
 
 @InProceedings{Chia_2021,
@@ -2521,6 +2587,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Human-Machine-Interface, Suchbegriffe},
   journal   = {2018 World Symposium on Digital Intelligence for Systems and Machines (DISA)},
   publisher = {IEEE},
+  relevance = {no},
 }
 
 @Article{Singh_2021,
@@ -2536,6 +2603,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1080/03091902.2021.1936237},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Informa UK Limited},
+  relevance = {no},
 }
 
 @Article{Mourtzis_2023,
@@ -2551,6 +2619,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.3390/fi15050162},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {MDPI AG},
+  relevance = {no},
 }
 
 @Article{Kumar_2022,
@@ -2576,9 +2645,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {5},
   pages     = {825--841},
   volume    = {19},
+  comment   = {operative time},
   doi       = {10.1109/tra.2003.817093},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {yes},
 }
 
 @Article{Falandays_2021,
@@ -2592,6 +2663,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.3389/fpsyg.2021.624111},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Frontiers Media SA},
+  relevance = {no},
 }
 
 @InProceedings{Jeong_Su_Han,
@@ -2603,6 +2675,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {IEMBS-03},
   doi        = {10.1109/iembs.2003.1279672},
   groups     = {Human-Machine-Interface, Suchbegriffe},
+  relevance  = {no},
 }
 
 @Article{Nachreiner_2006,
@@ -2618,6 +2691,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.ssci.2005.09.003},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Debernard_2016,
@@ -2629,9 +2703,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {19},
   pages     = {609--614},
   volume    = {49},
+  comment   = {transparency},
   doi       = {10.1016/j.ifacol.2016.10.629},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {yes},
 }
 
 @Article{Huang_2018,
@@ -2644,10 +2720,12 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {9},
   pages     = {2023--2032},
   volume    = {65},
+  comment   = {accuracy, response time, false positive rate},
   doi       = {10.1109/tbme.2017.2732479},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
   ranking   = {rank5},
+  relevance = {yes},
 }
 
 @Article{Ha_2014,
@@ -2661,6 +2739,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.proeng.2014.02.197},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Wu_2018,
@@ -2673,10 +2752,12 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {6},
   pages     = {1322--1333},
   volume    = {12},
+  comment   = {accuracy},
   doi       = {10.1109/tbcas.2018.2878395},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
   ranking   = {rank5},
+  relevance = {no},
 }
 
 @Article{Young_2017,
@@ -2691,6 +2772,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.aap.2016.06.010},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {ja},
 }
 
 @Article{Ardanza_2019,
@@ -2706,6 +2788,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1080/00207543.2019.1572932},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Informa UK Limited},
+  relevance = {yes},
 }
 
 @InProceedings{Dearden,
@@ -2717,6 +2800,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {CMPASS-96},
   doi        = {10.1109/cmpass.1996.507884},
   groups     = {Human-Machine-Interface, Suchbegriffe},
+  relevance  = {no},
 }
 
 @Book{fiset2009human,
@@ -2725,6 +2809,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   title     = {Human-machine interface design for process control applications},
   year      = {2009},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{Heng2022,
@@ -2739,6 +2824,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1002/adma.202107902},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{Wang_2021,
@@ -2753,6 +2839,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1002/adfm.202008807},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{Ross2001,
@@ -2782,35 +2869,36 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Human-Machine-Interface, Suchbegriffe},
   keywords  = {Electrical and Electronic Engineering, Biochemistry, Instrumentation, Atomic and Molecular Physics, and Optics, Analytical Chemistry},
   publisher = {MDPI AG},
+  relevance = {no},
 }
 
 @Article{Firoiu2002,
-  author     = {Firoiu, V. and Le Boudec, J.-Y. and Towsley, D. and Zhi-Li Zhang},
-  journal    = {Proceedings of the IEEE},
-  title      = {Theories and models for Internet quality of service},
-  year       = {2002},
-  issn       = {0018-9219},
-  month      = sep,
-  number     = {9},
-  pages      = {1565--1591},
-  volume     = {90},
-  doi        = {10.1109/jproc.2002.802002},
-  file       = {:pdf/Firoiu2002 - Theories and Models for Internet Quality of Service.pdf:PDF},
-  groups     = {methods, PQoS},
-  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
-  readstatus = {skimmed},
+  author    = {Firoiu, V. and Le Boudec, J.-Y. and Towsley, D. and Zhi-Li Zhang},
+  journal   = {Proceedings of the IEEE},
+  title     = {Theories and models for Internet quality of service},
+  year      = {2002},
+  issn      = {0018-9219},
+  month     = sep,
+  number    = {9},
+  pages     = {1565--1591},
+  volume    = {90},
+  doi       = {10.1109/jproc.2002.802002},
+  file      = {:pdf/Firoiu2002 - Theories and Models for Internet Quality of Service.pdf:PDF},
+  groups    = {methods, PQoS},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
 }
 
 @Misc{Joshi2015,
-  author    = {Joshi, Manish and Hadi, Theyazn Hassn},
-  title     = {A Review of Network Traffic Analysis and Prediction Techniques},
-  year      = {2015},
-  copyright = {arXiv.org perpetual, non-exclusive license},
-  doi       = {10.48550/ARXIV.1507.05722},
-  file      = {:pdf/Joshi2015 - A Review of Network Traffic Analysis and Prediction Techniques.pdf:PDF},
-  groups    = {methods, PQoS},
-  keywords  = {Networking and Internet Architecture (cs.NI), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  publisher = {arXiv},
+  author     = {Joshi, Manish and Hadi, Theyazn Hassn},
+  title      = {A Review of Network Traffic Analysis and Prediction Techniques},
+  year       = {2015},
+  copyright  = {arXiv.org perpetual, non-exclusive license},
+  doi        = {10.48550/ARXIV.1507.05722},
+  file       = {:pdf/Joshi2015 - A Review of Network Traffic Analysis and Prediction Techniques.pdf:PDF},
+  groups     = {methods, PQoS, pqos_servey},
+  keywords   = {Networking and Internet Architecture (cs.NI), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher  = {arXiv},
+  readstatus = {skimmed},
 }
 
 @InProceedings{Ramakrishnan2018,
@@ -2826,17 +2914,20 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @Article{Ma2021,
-  author    = {Ma, Yue and Li, Le and Yin, Zhenyu and Chai, Anying and Li, Mingshi and Bi, Zhiying},
-  journal   = {Procedia Computer Science},
-  title     = {Research and application of network status prediction based on BP neural network for intelligent production line},
-  year      = {2021},
-  issn      = {1877-0509},
-  pages     = {189--196},
-  volume    = {183},
-  doi       = {10.1016/j.procs.2021.02.049},
-  file      = {:pdf/Ma2021 - Research and Application of Network Status Prediction Based on BP Neural Network for Intelligent Production Line.pdf:PDF},
-  groups    = {methods, PQoS},
-  publisher = {Elsevier BV},
+  author     = {Ma, Yue and Li, Le and Yin, Zhenyu and Chai, Anying and Li, Mingshi and Bi, Zhiying},
+  journal    = {Procedia Computer Science},
+  title      = {Research and application of network status prediction based on BP neural network for intelligent production line},
+  year       = {2021},
+  issn       = {1877-0509},
+  pages      = {189--196},
+  volume     = {183},
+  comment    = {This is for production line, i.e., specific network, not for mobile network.},
+  doi        = {10.1016/j.procs.2021.02.049},
+  file       = {:pdf/Ma2021 - Research and Application of Network Status Prediction Based on BP Neural Network for Intelligent Production Line.pdf:PDF},
+  groups     = {methods, PQoS},
+  priority   = {prio3},
+  publisher  = {Elsevier BV},
+  readstatus = {skimmed},
 }
 
 @Article{Reibman2004,
@@ -2860,6 +2951,9 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   author     = {Bragato, Filippo and Lotta, Tommaso and Ventura, Gianmaria and Drago, Matteo and Mason, Federico and Giordani, Marco and Zorzi, Michele},
   title      = {Towards Decentralized Predictive Quality of Service in Next-Generation Vehicular Networks},
   year       = {2023},
+  comment    = {Transmits LiDAR data 
+evaluation in ns3 simulation
+following works from "A Reinforcement Learning Framework for PQoS in a Teleoperated Driving Scenario" and "Artificial Intelligence in Vehicular Wireless Networks: A Case Study Using ns-3"},
   copyright  = {arXiv.org perpetual, non-exclusive license},
   doi        = {10.48550/ARXIV.2302.11268},
   file       = {:pdf/Bragato2023 - Towards Decentralized Predictive Quality of Service in Next Generation Vehicular Networks.pdf:PDF},
@@ -2881,7 +2975,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {MoMM ’09},
   doi        = {10.1145/1821748.1821766},
   file       = {:pdf/Menkovski2009 - Predicting Quality of Experience in Multimedia Streaming.pdf:PDF},
-  groups     = {methods, PQoS},
+  groups     = {PQoS, adaptive_bitrate},
   ranking    = {rank5},
 }
 
@@ -2896,9 +2990,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   pages     = {106--112},
   volume    = {61},
   doi       = {10.1109/mcom.004.2200723},
+  file      = {:pdf/Skocaj2023 - Vehicle to Everything (V2X) Datasets for Machine Learning Based Predictive Quality of Service.pdf:PDF},
   groups    = {methods, PQoS},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
-  ranking   = {rank5},
+  ranking   = {rank1},
 }
 
 @Article{Ma2016,
@@ -2929,7 +3024,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   volume    = {12},
   doi       = {10.1109/tmm.2009.2036294},
   file      = {:pdf/Luan2010 - Impact of Network Dynamics on User’s Video Quality_ Analytical Framework and QoS Provision.pdf:PDF},
-  groups    = {methods, PQoS},
+  groups    = {PQoS, adaptive_bitrate},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
   ranking   = {rank4},
 }
@@ -2954,9 +3049,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   volume    = {12},
   doi       = {10.1186/s13677-023-00391-0},
   file      = {:pdf/Zhang2023 - QoS Prediction in Intelligent Edge Computing Based on Feature Learning.pdf:PDF},
-  groups    = {methods},
+  groups    = {methods, PQoS},
   keywords  = {Computer Networks and Communications, Software},
   publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank1},
 }
 
 @Article{Milne2014,
@@ -3027,17 +3123,19 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @Article{Aiken1981,
-  author    = {J. Aiken},
-  journal   = {Marine Ecology Progress Series},
-  title     = {A Chlorophyll Sensor for Automatic, Remote, Operation in the Marine Environment},
-  year      = {1981},
-  issn      = {0171-8630},
-  pages     = {235-239},
-  volume    = {4},
-  doi       = {10.3354/meps004235},
-  groups    = {Remote Operation, Suchbegriffe},
-  keywords  = {Ecology, Aquatic Science, Ecology, Evolution, Behavior and Systematics},
-  publisher = {Inter-Research Science Center},
+  author     = {J. Aiken},
+  journal    = {Marine Ecology Progress Series},
+  title      = {A Chlorophyll Sensor for Automatic, Remote, Operation in the Marine Environment},
+  year       = {1981},
+  issn       = {0171-8630},
+  pages      = {235-239},
+  volume     = {4},
+  doi        = {10.3354/meps004235},
+  groups     = {Remote Operation, Suchbegriffe},
+  keywords   = {Ecology, Aquatic Science, Ecology, Evolution, Behavior and Systematics},
+  publisher  = {Inter-Research Science Center},
+  readstatus = {read},
+  relevance  = {nein},
 }
 
 @Article{Stamos1990,
@@ -3145,12 +3243,14 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @InCollection{tanenbaum1988critique,
-  author    = {Tanenbaum, Andrew Stuart and Van Renesse, Robbert},
-  booktitle = {Proc. Euteco'88 IR 123},
-  title     = {A critique of the remote procedure call paradigm},
-  year      = {1988},
-  pages     = {1--11},
-  groups    = {Remote Operation, Suchbegriffe},
+  author     = {Tanenbaum, Andrew Stuart and Van Renesse, Robbert},
+  booktitle  = {Proc. Euteco'88 IR 123},
+  title      = {A critique of the remote procedure call paradigm},
+  year       = {1988},
+  pages      = {1--11},
+  groups     = {Remote Operation, Suchbegriffe},
+  readstatus = {read},
+  relevance  = {nein},
 }
 
 @Article{Dakkak2003,
@@ -3199,17 +3299,19 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @Article{Barrios2013,
-  author    = {Barrios, Arquimedes and Panche, Stifen and Duque, Mauricio and Grisales, Victor H. and Prieto, Flavio and Villa, José L. and Chevrel, Philippe and Canu, Michael},
-  journal   = {Computers &amp; Education},
-  title     = {A multi-user remote academic laboratory system},
-  year      = {2013},
-  issn      = {0360-1315},
-  month     = mar,
-  pages     = {111--122},
-  volume    = {62},
-  doi       = {10.1016/j.compedu.2012.10.011},
-  groups    = {Remote Operation, Suchbegriffe},
-  publisher = {Elsevier BV},
+  author     = {Barrios, Arquimedes and Panche, Stifen and Duque, Mauricio and Grisales, Victor H. and Prieto, Flavio and Villa, José L. and Chevrel, Philippe and Canu, Michael},
+  journal    = {Computers &amp; Education},
+  title      = {A multi-user remote academic laboratory system},
+  year       = {2013},
+  issn       = {0360-1315},
+  month      = mar,
+  pages      = {111--122},
+  volume     = {62},
+  doi        = {10.1016/j.compedu.2012.10.011},
+  groups     = {Remote Operation, Suchbegriffe},
+  publisher  = {Elsevier BV},
+  readstatus = {read},
+  relevance  = {ja},
 }
 
 @Article{Jaggi_1993,
@@ -3269,18 +3371,20 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 }
 
 @Article{Rolfe2007,
-  author    = {Rolfe, A.C.},
-  journal   = {Fusion Engineering and Design},
-  title     = {A perspective on fusion relevant remote handling techniques},
-  year      = {2007},
-  issn      = {0920-3796},
-  month     = oct,
-  number    = {15–24},
-  pages     = {1917--1923},
-  volume    = {82},
-  doi       = {10.1016/j.fusengdes.2007.04.049},
-  groups    = {Remote Operation, Suchbegriffe},
-  publisher = {Elsevier BV},
+  author     = {Rolfe, A.C.},
+  journal    = {Fusion Engineering and Design},
+  title      = {A perspective on fusion relevant remote handling techniques},
+  year       = {2007},
+  issn       = {0920-3796},
+  month      = oct,
+  number     = {15–24},
+  pages      = {1917--1923},
+  volume     = {82},
+  doi        = {10.1016/j.fusengdes.2007.04.049},
+  groups     = {Remote Operation, Suchbegriffe},
+  publisher  = {Elsevier BV},
+  readstatus = {read},
+  relevance  = {nein},
 }
 
 @InProceedings{Kyrkjebo̸2009,
@@ -3294,6 +3398,8 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {OMAE2009},
   doi        = {10.1115/omae2009-79702},
   groups     = {Remote Operation, Suchbegriffe},
+  readstatus = {read},
+  relevance  = {ja},
 }
 
 @Article{Huelga2001,
@@ -3353,6 +3459,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.sab.2005.03.017},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{VanRossum1991,
@@ -3376,6 +3483,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {HOTOS-01},
   doi        = {10.1109/hotos.2001.990062},
   groups     = {Remote Operation, Suchbegriffe},
+  relevance  = {no},
 }
 
 @Article{Loving2014,
@@ -3391,6 +3499,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.fusengdes.2014.04.082},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Laaki2019,
@@ -3401,9 +3510,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   issn      = {2169-3536},
   pages     = {20325--20336},
   volume    = {7},
+  comment   = {delay},
   doi       = {10.1109/access.2019.2897018},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {yes},
 }
 
 @Article{Elbatran2015,
@@ -3418,20 +3529,23 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.rser.2014.11.045},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Tan2014,
-  author    = {Tan, Yingjie and Meegahapola, Lasantha and Muttaqi, Kashem M.},
-  journal   = {Renewable and Sustainable Energy Reviews},
-  title     = {A review of technical challenges in planning and operation of remote area power supply systems},
-  year      = {2014},
-  issn      = {1364-0321},
-  month     = oct,
-  pages     = {876--889},
-  volume    = {38},
-  doi       = {10.1016/j.rser.2014.07.034},
-  groups    = {Remote Operation, Suchbegriffe},
-  publisher = {Elsevier BV},
+  author     = {Tan, Yingjie and Meegahapola, Lasantha and Muttaqi, Kashem M.},
+  journal    = {Renewable and Sustainable Energy Reviews},
+  title      = {A review of technical challenges in planning and operation of remote area power supply systems},
+  year       = {2014},
+  issn       = {1364-0321},
+  month      = oct,
+  pages      = {876--889},
+  volume     = {38},
+  doi        = {10.1016/j.rser.2014.07.034},
+  groups     = {Remote Operation, Suchbegriffe},
+  publisher  = {Elsevier BV},
+  readstatus = {read},
+  relevance  = {nein},
 }
 
 @Article{Watts2012,
@@ -3469,9 +3583,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   month     = apr,
   number    = {2},
   volume    = {20},
+  comment   = {efficiency, operation time},
   doi       = {10.1007/s10544-018-0277-5},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Springer Science and Business Media LLC},
+  relevance = {yes},
 }
 
 @Article{Bouchey2021,
@@ -3487,6 +3603,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Remote Operation, Suchbegriffe},
   keywords  = {Computer Networks and Communications, Education},
   publisher = {The Online Learning Consortium},
+  relevance = {no},
 }
 
 @Article{Huelga2002,
@@ -3502,6 +3619,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1103/physreva.65.042316},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {American Physical Society (APS)},
+  relevance = {no},
 }
 
 @Article{Mourtzis2020,
@@ -3514,9 +3632,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {5},
   pages     = {1855},
   volume    = {10},
+  comment   = {operating and maintenance cost,},
   doi       = {10.3390/app10051855},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {MDPI AG},
+  relevance = {yes},
 }
 
 @Misc{Theimer1985,
@@ -3529,6 +3649,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {5},
   pages     = {2--12},
   publisher = {ACM},
+  relevance = {no},
   volume    = {19},
 }
 
@@ -3544,15 +3665,17 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Remote Operation, Suchbegriffe},
   keywords  = {Management, Monitoring, Policy and Law, Mechanical Engineering, General Energy, Building and Construction},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Daniel2011,
-  author  = {Daniel, Kai and Wietfeld, Christian},
-  journal = {Homeland Security Affairs, Supplement},
-  title   = {Using public network infrastructures for UAV remote sensing in civilian security operations},
-  year    = {2011},
-  volume  = {3},
-  groups  = {Remote Operation, Suchbegriffe},
+  author    = {Daniel, Kai and Wietfeld, Christian},
+  journal   = {Homeland Security Affairs, Supplement},
+  title     = {Using public network infrastructures for UAV remote sensing in civilian security operations},
+  year      = {2011},
+  volume    = {3},
+  groups    = {Remote Operation, Suchbegriffe},
+  relevance = {no},
 }
 
 @InProceedings{Meng2004,
@@ -3561,8 +3684,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   title     = {Remote surgery case: robot-assisted teleneurosurgery},
   year      = {2004},
   publisher = {IEEE},
+  comment   = {time to transmit},
   doi       = {10.1109/robot.2004.1307250},
   groups    = {Remote Operation, Suchbegriffe},
+  relevance = {yes},
 }
 
 @InProceedings{Raju2016,
@@ -3574,6 +3699,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/ic3i.2016.7917983},
   groups    = {Remote Operation, Suchbegriffe},
+  relevance = {yes},
 }
 
 @InProceedings{Doniec2010,
@@ -3583,8 +3709,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   year      = {2010},
   month     = oct,
   publisher = {IEEE},
+  comment   = {latency, data integrity},
   doi       = {10.1109/iros.2010.5650224},
   groups    = {Remote Operation, Suchbegriffe},
+  relevance = {yes},
 }
 
 @InProceedings{Tipparaju2003,
@@ -3597,6 +3725,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   collection = {IPDPS-03},
   doi        = {10.1109/ipdps.2003.1213188},
   groups     = {Remote Operation, Suchbegriffe},
+  relevance  = {no},
 }
 
 @Article{Schellekens2008,
@@ -3626,6 +3755,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1145/142111.142121},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Association for Computing Machinery (ACM)},
+  relevance = {no},
 }
 
 @Article{Viawan2007,
@@ -3641,6 +3771,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/tpwrs.2007.907362},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @InProceedings{keyes2006camera,
@@ -3651,6 +3782,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   organization = {National Institute of Standards and Technology Gaithersburg, MD},
   pages        = {22--24},
   groups       = {Remote Operation, Suchbegriffe},
+  relevance    = {no},
 }
 
 @InProceedings{Moon2011,
@@ -3660,8 +3792,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   year      = {2011},
   month     = nov,
   publisher = {IEEE},
+  comment   = {delay},
   doi       = {10.1109/urai.2011.6145963},
   groups    = {Remote Operation, Suchbegriffe},
+  relevance = {yes},
 }
 
 @Article{Wang1998,
@@ -3677,6 +3811,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/s0003-2670(97)00702-2},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Sarkar2010,
@@ -3692,6 +3827,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.watres.2010.07.072},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Guimaraes2011,
@@ -3707,6 +3843,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/tlt.2010.22},
   groups    = {Remote Operation, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @Article{Wang2018,
@@ -3722,6 +3859,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.mattod.2017.12.006},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @InProceedings{Gong2009,
@@ -3746,6 +3884,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/jsen.2022.3165988},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @Article{Shi_2019,
@@ -3760,6 +3899,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.nanoen.2019.05.033},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Tahir2018,
@@ -3774,14 +3914,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Human-Machine-Interface, Suchbegriffe},
   keywords  = {Industrial and Manufacturing Engineering},
   publisher = {MedCrave Group, LLC},
-}
-
-@Book{Fiset2009,
-  author    = {Fiset, Jean-Yves},
-  publisher = {ISA},
-  title     = {Human-machine interface design for process control applications},
-  year      = {2009},
-  groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{Ross2009,
@@ -3794,9 +3927,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {2},
   pages     = {63--72},
   volume    = {20},
+  abstract  = {The development of valid and relevant instrumental methods in concert with dynamic sensory methods has allowed for a more comprehensive analysis of human perception. Strides have been made with the development of techniques to evaluate changes in food texture, including [electromyography](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/electromyography "Learn more about electromyography from ScienceDirect's AI-generated Topic Pages") and auditory methods. Within flavor and aroma analysis, the development of instrumentation to measure volatile release from the nose and [mouth](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/mouth "Learn more about mouth from ScienceDirect's AI-generated Topic Pages") during food consumption has allowed a more realistic measurement of individual perception. This paper will review the recent developments in the field of [sensory evaluation](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/sensory-evaluation "Learn more about sensory evaluation from ScienceDirect's AI-generated Topic Pages") and instrumental analysis and further discuss the interface between [humans](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/human "Learn more about humans from ScienceDirect's AI-generated Topic Pages") (sensory science) and machines (instrumental analysis).},
   doi       = {10.1016/j.tifs.2008.11.004},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Hoc2000,
@@ -3812,6 +3947,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1080/001401300409044},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Informa UK Limited},
+  relevance = {no},
 }
 
 @InProceedings{Mahmud2020,
@@ -3821,8 +3957,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   year      = {2020},
   month     = jan,
   publisher = {IEEE},
+  abstract  = {Interface for the Human Machine Interaction has become a prominent area of research due to the rapid growth of automation and robotics in the recent few decades. Although an abundance of frameworks have been emerged to make the interaction between human and machine easy and robust, a substantial portion of these is not flourished in their scope. Through this review, we have tried to reveal different types of interfacing technique between human and machine to exhibit the evolution of the related technologies in developing assistant devices. This review explores the contemporary groundbreaking technologies developed for this purpose and their advantages and limitations. An outline is drawn for forthcoming development in the field of human machine interaction, human computer interaction and human robot interaction by using this review. This review draws a broad perspective on status quo and perspective on the possible future development of interfaces of assistant devices in the field of Human machine interaction.},
+  comment   = {accuracy, suitability, cost-effectiveness, flexibility},
   doi       = {10.1109/ccwc47524.2020.9031244},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {yes},
 }
 
 @InProceedings{Strausser2011,
@@ -3832,8 +3971,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   year      = {2011},
   month     = sep,
   publisher = {IEEE},
+  comment   = {natural gesture},
   doi       = {10.1109/iros.2011.6095025},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {yes},
 }
 
 @Article{Yu2022,
@@ -3848,6 +3989,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1126/scirobotics.abn0495},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {American Association for the Advancement of Science (AAAS)},
+  relevance = {no},
 }
 
 @Article{Yin2012,
@@ -3863,6 +4005,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/titb.2011.2178034},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {yes},
 }
 
 @Article{Li2017,
@@ -3878,6 +4021,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/thms.2017.2700630},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @Article{Zhang2021a,
@@ -3890,9 +4034,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {S1},
   pages     = {462--469},
   volume    = {13},
+  abstract  = {In recent years, progressive attention has been paid to the research of man–machine interface. In many fields of application software system development, experts have listed man–machine interface as one of the commands for the urgent research and advancement. This article has proposed the improvement to the man–machine interface system control design for the practical value of life, and has presented an approach for algorithms using Machine Learning. The method used in the paper includes the spatial layout of human–machine interface supported by the design cognition model and the use of Machine Learning algorithms. Based on Max–Min Ant System, the optimal path of ant construction is obtained, which is the optimal layout scheme. The experimental result in the paper shows that: with the support of the cognitive model, the cabin man–machine interface system control design method based on Genetic Algorithm-Ants Algorithm is obtained. The layout design principles were summarized by the cognitive model, and the layout optimization objective function was constructed according to each principle, and the problem of solving layout parties and cases was transformed into a combinatorial optimization problem. The form of fitness function, pheromone, and heuristic information for layout optimization was studied, and the algorithm of manual optimization process was implemented based on Genetic Algorithm and Ant Algorithm, in order to obtain a good optimization performance and time performance as a result. The practical value of the control design of man–machine interface system with the Machine Learning algorithm is proved.},
   doi       = {10.1007/s13198-021-01469-1},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Springer Science and Business Media LLC},
+  relevance = {no},
 }
 
 @Article{Yang2014,
@@ -3908,6 +4054,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1021/am500864t},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {American Chemical Society (ACS)},
+  relevance = {nein},
 }
 
 @InProceedings{Abrash2021,
@@ -3919,6 +4066,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/iedm19574.2021.9720526},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{Farina2015,
@@ -3934,6 +4082,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/msp.2014.2359242},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @Article{Greer2008,
@@ -3949,6 +4098,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/tmech.2008.924118},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @Article{Hartman2019,
@@ -3960,9 +4110,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   month     = jan,
   pages     = {1--11},
   volume    = {2019},
+  comment   = {hardware load, startup delay, operating frequency},
   doi       = {10.1155/2019/4837058},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Hindawi Limited},
+  relevance = {yes},
 }
 
 @Article{Ding2018,
@@ -3977,6 +4129,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1002/admt.201800487},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{GomezGil2011,
@@ -3989,9 +4142,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {7},
   pages     = {7110--7126},
   volume    = {11},
+  comment   = {accuracy},
   doi       = {10.3390/s110707110},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {MDPI AG},
+  relevance = {yes},
 }
 
 @Article{Pu2021,
@@ -4007,6 +4162,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   groups    = {Human-Machine-Interface, Suchbegriffe},
   keywords  = {Multidisciplinary},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Tang2021,
@@ -4021,6 +4177,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.nanoen.2020.105582},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Yu2023,
@@ -4035,6 +4192,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1002/adma.202204964},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{Rezazadeh2011,
@@ -4047,9 +4205,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {3},
   pages     = {289--298},
   volume    = {20},
+  comment   = {task completion time, accuracy},
   doi       = {10.1016/j.autcon.2010.10.005},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {yes},
 }
 
 @InProceedings{Gorecky_2014,
@@ -4061,6 +4221,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/indin.2014.6945523},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{He_2019,
@@ -4075,6 +4236,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.nanoen.2019.03.005},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Zhu_2020,
@@ -4089,6 +4251,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1126/sciadv.aaz8693},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {American Association for the Advancement of Science (AAAS)},
+  relevance = {no},
 }
 
 @Article{Wang2017,
@@ -4103,6 +4266,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1002/admi.201600709},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @InProceedings{Hu2003,
@@ -4113,23 +4277,10 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher  = {IEEE},
   series     = {IROS-03},
   collection = {IROS-03},
+  comment    = {corret recognition, speed},
   doi        = {10.1109/iros.2003.1248866},
   groups     = {Human-Machine-Interface, Suchbegriffe},
-}
-
-@Article{Bissoli_2019,
-  author    = {Bissoli, Alexandre and Lavino-Junior, Daniel and Sime, Mariana and Encarnação, Lucas and Bastos-Filho, Teodiano},
-  journal   = {Sensors},
-  title     = {A Human–Machine Interface Based on Eye Tracking for Controlling and Monitoring a Smart Home Using the Internet of Things},
-  year      = {2019},
-  issn      = {1424-8220},
-  month     = feb,
-  number    = {4},
-  pages     = {859},
-  volume    = {19},
-  doi       = {10.3390/s19040859},
-  groups    = {Human-Machine-Interface, Suchbegriffe},
-  publisher = {MDPI AG},
+  relevance  = {yes},
 }
 
 @Article{Naito1995,
@@ -4145,6 +4296,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/0029-5493(94)00903-c},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Ferreira2008,
@@ -4156,9 +4308,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   month     = mar,
   number    = {1},
   volume    = {5},
+  comment   = {accurracy, reliability, power consumption, data transmission rate, UI usability, wireless communication stability, portability},
   doi       = {10.1186/1743-0003-5-10},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Springer Science and Business Media LLC},
+  relevance = {yes},
 }
 
 @Article{Park2004,
@@ -4174,6 +4328,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/tsmca.2004.832813},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @InProceedings{Saini2016,
@@ -4185,6 +4340,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/iccubea.2016.7860151},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{Danziger2009,
@@ -4200,6 +4356,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1109/tbme.2009.2013822},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {no},
 }
 
 @Article{Lim2014,
@@ -4215,6 +4372,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1002/adfm.201402987},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{Ma2015,
@@ -4227,9 +4385,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   number    = {3},
   pages     = {876--889},
   volume    = {62},
+  comment   = {completion time, accuracy},
   doi       = {10.1109/tbme.2014.2369483},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {yes},
 }
 
 @Article{Gordleeva2020,
@@ -4240,9 +4400,12 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   issn      = {2169-3536},
   pages     = {84070--84081},
   volume    = {8},
+  abstract  = {This article presents a rehabilitation technique based on a lower-limb exoskeleton integrated with a human-machine interface (HMI). HMI is used to record and process multimodal signals collected using a foot motor imagery (MI)-based brain-machine interface (BMI) and multichannel electromyographic (EMG) signals recorded from leg muscles. Current solutions of HMI-equipped rehabilitation assistive technologies tested under laboratory conditions demonstrated a great deal of success, but faced several difficulties caused by the limited accuracy of detecting MI electroencephalography (EEG) and the reliability of online control when executing a movement by patients dressed in an exoskeleton. In the case of lower-limb representation, there is still the problem of reliably distinguishing leg movement intentions and differentiating them in BMI systems. Targeting the design of a rehabilitation technique replicating the natural mode of motor control in exoskeleton walking patients, we have shown how the combined use of multimodal signals can improve the accuracy, performance, and reliability of HMI. The system was tested on healthy subjects operating the exoskeleton under different conditions. The study also resulted in algorithms of multimodal HMI data collection, processing, and classification. The developed system can analyze up to 15 signals simultaneously in real-time during a movement. Foot MI is extracted from EEG signals (seven channels) using the event-related (de)synchronization effect. Supplemented by EMG signals reflecting motor intention, the control system can initiate and differentiate the movement of the right and left legs with a high degree of reliability. The classification and control system permits one to work online when the exoskeleton is executing a movement.},
+  comment   = {reliability, intention prediction},
   doi       = {10.1109/access.2020.2991812},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  relevance = {yes},
 }
 
 @Article{Ravindra2014,
@@ -4256,6 +4419,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.3389/fnbot.2014.00024},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Frontiers Media SA},
+  relevance = {Ja},
 }
 
 @Article{Dong2020,
@@ -4271,6 +4435,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1021/acsnano.0c03728},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {American Chemical Society (ACS)},
+  relevance = {no},
 }
 
 @Article{Kim2020,
@@ -4282,9 +4447,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   month     = nov,
   number    = {2},
   volume    = {3},
+  abstract  = {The recent development of human–machine interface (HMI) involves advances in wearable devices that safely interact with the human body while providing high mechanical compliance. Various cutting-edge technologies such as highly stretchable electronics, multiple sensor fusion, and wearable exoskeletons have enabled a higher level of interactivity. Notably, recent developments using machine intelligence have achieved unprecedented performance and solved various challenges. Herein, the recent progresses in stretchable HMI including stretchable sensors, stretchable actuating systems, and machine intelligence-aided stretchable devices are presented, and their principles and working mechanisms are discussed.},
   doi       = {10.1002/aisy.202000157},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{Vaezipour2017,
@@ -4299,6 +4466,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.tra.2017.04.030},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Ha2009,
@@ -4314,6 +4482,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.ress.2009.02.025},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
 }
 
 @Article{Wolczowski2010,
@@ -4329,6 +4498,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1111/j.1468-0394.2009.00526.x},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Wiley},
+  relevance = {no},
 }
 
 @Article{Rouchitsas2019,
@@ -4339,9 +4509,11 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   issn      = {1664-1078},
   month     = dec,
   volume    = {10},
+  comment   = {error rates, frequency, decision time, reaction time},
   doi       = {10.3389/fpsyg.2019.02757},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Frontiers Media SA},
+  relevance = {yes},
 }
 
 @Article{Charissis_2008,
@@ -4357,6 +4529,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1007/s10111-008-0117-0},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Springer Science and Business Media LLC},
+  relevance = {no},
 }
 
 @InProceedings{Liu_2019,
@@ -4368,6 +4541,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEEE},
   doi       = {10.1109/iedm19573.2019.8993566},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @InProceedings{Pickering2007,
@@ -4378,6 +4552,7 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   publisher = {IEE},
   doi       = {10.1049/cp:20070468},
   groups    = {Human-Machine-Interface, Suchbegriffe},
+  relevance = {no},
 }
 
 @Article{Gautam2014,
@@ -4391,6 +4566,1411 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
   doi       = {10.1016/j.proeng.2014.12.252},
   groups    = {Human-Machine-Interface, Suchbegriffe},
   publisher = {Elsevier BV},
+  relevance = {no},
+}
+
+@Article{Sliwa2020,
+  author    = {Sliwa, Benjamin and Falkenberg, Robert and Liebig, Thomas and Piatkowski, Nico and Wietfeld, Christian},
+  journal   = {IEEE Transactions on Intelligent Transportation Systems},
+  title     = {Boosting Vehicle-to-Cloud Communication by Machine Learning-Enabled Context Prediction},
+  year      = {2020},
+  issn      = {1558-0016},
+  month     = aug,
+  number    = {8},
+  pages     = {3497--3512},
+  volume    = {21},
+  doi       = {10.1109/tits.2019.2930109},
+  file      = {:pdf/Sliwa2020 - Boosting Vehicle to Cloud Communication by Machine Learning Enabled Context Prediction.pdf:PDF},
+  groups    = {methods, PQoS},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank5},
+}
+
+@InProceedings{Kulzer2020,
+  author    = {Kulzer, Daniel Fabian and Stanczak, Slawomir and Botsov, Mladen},
+  booktitle = {2020 IEEE Wireless Communications and Networking Conference (WCNC)},
+  title     = {Novel QoS Control Framework for Automotive Safety-Related and Infotainment Services},
+  year      = {2020},
+  month     = may,
+  publisher = {IEEE},
+  doi       = {10.1109/wcnc45663.2020.9120576},
+  file      = {:pdf/Kulzer2020 - Novel QoS Control Framework for Automotive Safety Related and Infotainment Services.pdf:PDF},
+  groups    = {PQoS, resource allocation},
+  priority  = {prio1},
+  ranking   = {rank5},
+}
+
+@InProceedings{Hernangomez2023,
+  author    = {Hernangómez, Rodrigo and Geuer, Philipp and Palaios, Alexandros and Schäufele, Daniel and Watermann, Cara and Taleb-Bouhemadi, Khawla and Parvini, Mohammad and Krause, Anton and Partani, Sanket and Vielhaus, Christian and Kasparick, Martin and Külzer, Daniel F. and Burmeister, Friedrich and Fitzek, Frank H. P. and Schotten, Hans D. and Fettweis, Gerhard and Stańczak, Sławomir},
+  booktitle = {2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)},
+  title     = {Berlin V2X: A Machine Learning Dataset from Multiple Vehicles and Radio Access Technologies},
+  year      = {2023},
+  month     = jun,
+  publisher = {IEEE},
+  doi       = {10.1109/vtc2023-spring57618.2023.10200750},
+  file      = {:pdf/Hernangomez2023 - Berlin V2X_ a Machine Learning Dataset from Multiple Vehicles and Radio Access Technologies.pdf:PDF},
+  groups    = {PQoS},
+  ranking   = {rank5},
+}
+
+@InProceedings{Kulzer2021,
+  author    = {Kulzer, Daniel Fabian and Stanczak, Slawomir and Botsov, Mladen},
+  booktitle = {2021 IEEE 32nd Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)},
+  title     = {CDI Maps: Dynamic Estimation of the Radio Environment for Predictive Resource Allocation},
+  year      = {2021},
+  month     = sep,
+  publisher = {IEEE},
+  doi       = {10.1109/pimrc50174.2021.9569310},
+  file      = {:pdf/Kulzer2021 - CDI Maps_ Dynamic Estimation of the Radio Environment for Predictive Resource Allocation.pdf:PDF},
+  groups    = {PQoS, resource allocation},
+  priority  = {prio2},
+  ranking   = {rank5},
+}
+
+@InProceedings{Kulzer2021a,
+  author    = {Kulzer, Daniel Fabian and Stanczak, Slawomir and Botsov, Mladen},
+  booktitle = {2021 17th International Symposium on Wireless Communication Systems (ISWCS)},
+  title     = {Interference-Aware Distributed Predictive Resource Allocation for Automotive Applications},
+  year      = {2021},
+  month     = sep,
+  publisher = {IEEE},
+  doi       = {10.1109/iswcs49558.2021.9562184},
+  file      = {:pdf/Kulzer2021a - Interference Aware Distributed Predictive Resource Allocation for Automotive Applications.pdf:PDF},
+  groups    = {PQoS, resource allocation},
+  priority  = {prio1},
+}
+
+@InProceedings{Kulzer2021b,
+  author     = {Kulzer, Daniel Fabian and Debbichi, Firas and Stanczak, Slawomir and Botsov, Mladen},
+  booktitle  = {ICC 2021 - IEEE International Conference on Communications},
+  title      = {On Latency Prediction with Deep Learning and Passive Probing at High Mobility},
+  year       = {2021},
+  month      = jun,
+  publisher  = {IEEE},
+  comment    = {Predicts latency
+Uses various learning methods
+Add passive probing (active learning) to augment the dataset
+evaluated on real-world data},
+  doi        = {10.1109/icc42927.2021.9500495},
+  file       = {:pdf/Kulzer_2021 - On Latency Prediction with Deep Learning and Passive Probing at High Mobility.pdf:PDF},
+  groups     = {methods, PQoS},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@InProceedings{TorresFigueroa2020,
+  author    = {Torres-Figueroa, Luis and Schepker, Henning F. and Jiru, Josef},
+  booktitle = {2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring)},
+  title     = {QoS Evaluation and Prediction for C-V2X Communication in Commercially-Deployed LTE and Mobile Edge Networks},
+  year      = {2020},
+  month     = may,
+  publisher = {IEEE},
+  doi       = {10.1109/vtc2020-spring48590.2020.9129382},
+  file      = {:pdf/TorresFigueroa2020 - QoS Evaluation and Prediction for C V2X Communication in Commercially Deployed LTE and Mobile Edge Networks.pdf:PDF},
+  groups    = {methods, network_quality, PQoS},
+}
+
+@InProceedings{Sliwa2021,
+  author    = {Sliwa, Benjamin and Schippers, Hendrik and Wietfeld, Christian},
+  booktitle = {2021 IEEE 4th 5G World Forum (5GWF)},
+  title     = {Machine Learning-Enabled Data Rate Prediction for 5G NSA Vehicle-to-Cloud Communications},
+  year      = {2021},
+  month     = oct,
+  publisher = {IEEE},
+  doi       = {10.1109/5gwf52925.2021.00059},
+  file      = {:pdf/Machine_Learning-Enabled_Data_Rate_Prediction_for_5G_NSA_Vehicle-to-Cloud_Communications.pdf:PDF},
+  groups    = {methods, network_quality, PQoS},
+  ranking   = {rank5},
+}
+
+@InBook{Sliwa2022,
+  author    = {Sliwa, Benjamin},
+  pages     = {331--341},
+  publisher = {De Gruyter},
+  title     = {5.2 Resource-Efficient Vehicle-to-Cloud Communications},
+  year      = {2022},
+  isbn      = {9783110785982},
+  month     = dec,
+  booktitle = {Applications},
+  doi       = {10.1515/9783110785982-026},
+  file      = {:pdf/Sliwa2022 - 5.2 Resource Efficient Vehicle to Cloud Communications.pdf:PDF},
+  groups    = {methods, PQoS},
+}
+
+@Article{Wang2019,
+  author   = {Wang, Jiadai and Liu, Jiajia and Kato, Nei},
+  journal  = {IEEE Communications Surveys & Tutorials},
+  title    = {Networking and Communications in Autonomous Driving: A Survey},
+  year     = {2019},
+  number   = {2},
+  pages    = {1243-1274},
+  volume   = {21},
+  doi      = {10.1109/COMST.2018.2888904},
+  keywords = {Autonomous vehicles;Laser radar;Wiring;Wires;Cameras;Communications technology;Planning;Autonomous driving;intra-vehicle network;inter-vehicle network;verification method;survey},
+}
+
+@Article{Bao2023,
+  author    = {Bao, Zhibin and Hossain, Sabir and Lang, Haoxiang and Lin, Xianke},
+  journal   = {Engineering Applications of Artificial Intelligence},
+  title     = {A review of high-definition map creation methods for autonomous driving},
+  year      = {2023},
+  issn      = {0952-1976},
+  month     = jun,
+  pages     = {106125},
+  volume    = {122},
+  doi       = {10.1016/j.engappai.2023.106125},
+  file      = {:pdf/Bao2023 - A Review of High Definition Map Creation Methods for Autonomous Driving.pdf:PDF},
+  groups    = {HD-Map, Autonomous Driving},
+  publisher = {Elsevier BV},
+}
+
+@Article{Liu2019,
+  author    = {Liu, Rong and Wang, Jinling and Zhang, Bingqi},
+  journal   = {Journal of Navigation},
+  title     = {High Definition Map for Automated Driving: Overview and Analysis},
+  year      = {2019},
+  issn      = {1469-7785},
+  month     = aug,
+  number    = {2},
+  pages     = {324--341},
+  volume    = {73},
+  doi       = {10.1017/s0373463319000638},
+  file      = {:pdf/Liu2019 - High Definition Map for Automated Driving_ Overview and Analysis.pdf:PDF},
+  groups    = {HD-Map, Autonomous Driving},
+  publisher = {Cambridge University Press (CUP)},
+}
+
+@Article{Kasparick2016,
+  author    = {Kasparick, Martin and Cavalcante, Renato L. G. and Valentin, Stefan and Stanczak, Slawomir and Yukawa, Masahiro},
+  journal   = {IEEE Transactions on Vehicular Technology},
+  title     = {Kernel-Based Adaptive Online Reconstruction of Coverage Maps With Side Information},
+  year      = {2016},
+  issn      = {1939-9359},
+  month     = jul,
+  number    = {7},
+  pages     = {5461--5473},
+  volume    = {65},
+  doi       = {10.1109/tvt.2015.2453391},
+  file      = {:pdf/Kasparick2016 - Kernel Based Adaptive Online Reconstruction of Coverage Maps with Side Information.pdf:PDF},
+  groups    = {PQoS, resource allocation},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Wong2021,
+  author     = {Wong, Kelvin and Gu, Yanlei and Kamijo, Shunsuke},
+  journal    = {IEEE Intelligent Transportation Systems Magazine},
+  title      = {Mapping for Autonomous Driving: Opportunities and Challenges},
+  year       = {2021},
+  issn       = {1941-1197},
+  number     = {1},
+  pages      = {91--106},
+  volume     = {13},
+  doi        = {10.1109/mits.2020.3014152},
+  file       = {:pdf/Wong2021 - Mapping for Autonomous Driving_ Opportunities and Challenges.pdf:PDF},
+  groups     = {HD-Map, Autonomous Driving},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  readstatus = {skimmed},
+}
+
+@Misc{Ain2024,
+  author     = {Ain, Noor Ul and Hernangómez, Rodrigo and Palaios, Alexandros and Kasparick, Martin and Stańczak, Sławomir},
+  title      = {QoS prediction in radio vehicular environments via prior user information},
+  year       = {2024},
+  comment    = {It uses prior information (data recorded by a previous vehicle) to improve the prediction.
+Predict downlink QoS from LTE
+metrics: SNR, RSRP, RSRQ, RSSI, cell load from current vehicle or from previous vehicle},
+  copyright  = {Creative Commons Attribution 4.0 International},
+  doi        = {10.48550/ARXIV.2402.17689},
+  file       = {:pdf/Ain2024 - QoS Prediction in Radio Vehicular Environments Via Prior User Information.pdf:PDF},
+  groups     = {methods},
+  keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  priority   = {prio1},
+  publisher  = {arXiv},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@Misc{Koursioumpas2024,
+  author    = {Koursioumpas, Nikolaos and Magoula, Lina and Stavrakakis, Ioannis and Alonistioti, Nancy and Gutierrez-Estevez, M. A. and Khalili, Ramin},
+  title     = {DISTINQT: A Distributed Privacy Aware Learning Framework for QoS Prediction for Future Mobile and Wireless Networks},
+  year      = {2024},
+  comment   = {Distributed and federated learning
+Evaluation in simulation},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.2401.10158},
+  file      = {:pdf/Koursioumpas2024 - DISTINQT_ a Distributed Privacy Aware Learning Framework for QoS Prediction for Future Mobile and Wireless Networks.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {Networking and Internet Architecture (cs.NI), Artificial Intelligence (cs.AI), Cryptography and Security (cs.CR), Distributed, Parallel, and Cluster Computing (cs.DC), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
+}
+
+@Article{Cizmeci2017,
+  author    = {Cizmeci, Burak and Xu, Xiao and Chaudhari, Rahul and Bachhuber, Christoph and Alt, Nicolas and Steinbach, Eckehard},
+  journal   = {ACM Transactions on Multimedia Computing, Communications, and Applications},
+  title     = {A Multiplexing Scheme for Multimodal Teleoperation},
+  year      = {2017},
+  issn      = {1551-6865},
+  month     = apr,
+  number    = {2},
+  pages     = {1--28},
+  volume    = {13},
+  comment   = {tod_common related},
+  doi       = {10.1145/3063594},
+  file      = {:pdf/Cizmeci2017 - A Multiplexing Scheme for Multimodal Teleoperation.pdf:PDF},
+  groups    = {KPI & Failure cases, teleoperated_driving},
+  publisher = {Association for Computing Machinery (ACM)},
+}
+
+@InProceedings{Manzi2016,
+  author    = {Manzi, Alessandro and Fiorini, Laura and Limosani, Raffaele and Sincak, Peter and Dario, Paolo and Cavallo, Filippo},
+  booktitle = {2016 5th IEEE International Conference on Cloud Networking (Cloudnet)},
+  title     = {Use Case Evaluation of a Cloud Robotics Teleoperation System (Short Paper)},
+  year      = {2016},
+  month     = oct,
+  publisher = {IEEE},
+  comment   = {KPIs & Fail-case for tod_common (network connection)},
+  doi       = {10.1109/cloudnet.2016.49},
+  file      = {:pdf/Manzi2016 - Use Case Evaluation of a Cloud Robotics Teleoperation System (Short Paper).pdf:PDF},
+  groups    = {KPI & Failure cases, teleoperated_driving},
+}
+
+@Article{Prakash2023,
+  author    = {Prakash, Jai and Vignati, Michele and Vignarca, Daniele and Sabbioni, Edoardo and Cheli, Federico},
+  journal   = {IEEE Transactions on Intelligent Transportation Systems},
+  title     = {Predictive Display With Perspective Projection of Surroundings in Vehicle Teleoperation to Account Time-Delays},
+  year      = {2023},
+  issn      = {1558-0016},
+  month     = sep,
+  number    = {9},
+  pages     = {9084--9097},
+  volume    = {24},
+  comment   = {tod_perception (video compression), tod_operator_interface(video visualization)},
+  doi       = {10.1109/tits.2023.3268756},
+  file      = {:pdf/Prakash2023 - Predictive Display with Perspective Projection of Surroundings in Vehicle Teleoperation to Account Time Delays.pdf:PDF},
+  groups    = {KPI & Failure cases, teleoperated_driving},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@InProceedings{Heryana2022,
+  author     = {Heryana, Ana and Krisnandi, Dikdik and Pardede, Hilman and Nugraha Nurkahfi, Galih and Dinata, Mochamad Mardi Marta and Rozie, Andri and Firmansyah, Rendra},
+  booktitle  = {Proceedings of the 2022 International Conference on Computer, Control, Informatics and Its Applications},
+  title      = {Realtime Video Latency Reduction for Autonomous Vehicle Teleoperation Using RTMP Over UDP Protocols},
+  year       = {2022},
+  month      = nov,
+  publisher  = {ACM},
+  series     = {IC3INA 2022},
+  collection = {IC3INA 2022},
+  doi        = {10.1145/3575882.3575891},
+  file       = {:pdf/Heryana2022 - Realtime Video Latency Reduction for Autonomous Vehicle Teleoperation Using RTMP Over UDP Protocols.pdf:PDF},
+  groups     = {KPI & Failure cases, teleoperated_driving},
+}
+
+@Misc{Dror2024,
+  author    = {Dror, I. and Hadar, O.},
+  title     = {Optimizing traffic signs and lights visibility for the teleoperation of autonomous vehicles through ROI compression},
+  year      = {2024},
+  comment   = {video compression (tod_perception)},
+  copyright = {Creative Commons Attribution 4.0 International},
+  doi       = {10.48550/ARXIV.2404.02481},
+  file      = {:pdf/Dror2024 - Optimizing Traffic Signs and Lights Visibility for the Teleoperation of Autonomous Vehicles through ROI Compression.pdf:PDF},
+  groups    = {KPI & Failure cases},
+  keywords  = {Image and Video Processing (eess.IV), FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering},
+  publisher = {arXiv},
+}
+
+@Standard{SAE2021,
+  organization = {SAE International},
+  title        = {Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles},
+  number       = {J3016_202104},
+  url          = {https://www.sae.org/standards/content/j3016_202104/},
+  year         = {2021},
+  groups       = {Autonomous Driving},
+}
+
+@Article{Zablocki2022,
+  author    = {Zablocki, Éloi and Ben-Younes, Hédi and Pérez, Patrick and Cord, Matthieu},
+  journal   = {International Journal of Computer Vision},
+  title     = {Explainability of Deep Vision-Based Autonomous Driving Systems: Review and Challenges},
+  year      = {2022},
+  issn      = {1573-1405},
+  month     = aug,
+  number    = {10},
+  pages     = {2425--2452},
+  volume    = {130},
+  doi       = {10.1007/s11263-022-01657-x},
+  file      = {:pdf/Zablocki2022 - Explainability of Deep Vision Based Autonomous Driving Systems_ Review and Challenges.pdf:PDF},
+  groups    = {Autonomous Driving, av_survey},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Diehl2023,
+  author    = {Diehl, Christopher and Sievernich, Timo Sebastian and Kruger, Martin and Hoffmann, Frank and Bertram, Torsten},
+  journal   = {IEEE Robotics and Automation Letters},
+  title     = {Uncertainty-Aware Model-Based Offline Reinforcement Learning for Automated Driving},
+  year      = {2023},
+  issn      = {2377-3774},
+  month     = feb,
+  number    = {2},
+  pages     = {1167--1174},
+  volume    = {8},
+  doi       = {10.1109/lra.2023.3236579},
+  file      = {:pdf/Diehl2023 - Uncertainty Aware Model Based Offline Reinforcement Learning for Automated Driving.pdf:PDF},
+  groups    = {Autonomous Driving},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Misc{Renz2022,
+  author    = {Renz, Katrin and Chitta, Kashyap and Mercea, Otniel-Bogdan and Koepke, A. Sophia and Akata, Zeynep and Geiger, Andreas},
+  title     = {PlanT: Explainable Planning Transformers via Object-Level Representations},
+  year      = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.2210.14222},
+  file      = {:pdf/Renz2022 - PlanT_ Explainable Planning Transformers Via Object Level Representations.pdf:PDF},
+  groups    = {Autonomous Driving},
+  keywords  = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
+}
+
+@Article{Lee2020,
+  author    = {Lee, Junwon and Lee, Kieun and Yoo, Aelee and Moon, Changjoo},
+  journal   = {Electronics},
+  title     = {Design and Implementation of Edge-Fog-Cloud System through HD Map Generation from LiDAR Data of Autonomous Vehicles},
+  year      = {2020},
+  issn      = {2079-9292},
+  month     = dec,
+  number    = {12},
+  pages     = {2084},
+  volume    = {9},
+  doi       = {10.3390/electronics9122084},
+  file      = {:pdf/Lee2020 - Design and Implementation of Edge Fog Cloud System through HD Map Generation from LiDAR Data of Autonomous Vehicles.pdf:PDF},
+  groups    = {HD-Map},
+  publisher = {MDPI AG},
+}
+
+@InProceedings{Abdelkader2023,
+  author    = {Abdelkader, Ghadeer and Alghamdi, Taghreed and Elgazzar, Khalid and Khamis, Alaa},
+  booktitle = {2023 IEEE International Conference on Smart Mobility (SM)},
+  title     = {HD Maps for Connected and Automated Vehicles: Enabling Technologies and Future Directions},
+  year      = {2023},
+  month     = mar,
+  publisher = {IEEE},
+  doi       = {10.1109/sm57895.2023.10112453},
+  file      = {:pdf/Abdelkader2023 - HD Maps for Connected and Automated Vehicles_ Enabling Technologies and Future Directions.pdf:PDF},
+  groups    = {HD-Map},
+}
+
+@Article{Seif2016,
+  author    = {Seif, Heiko G. and Hu, Xiaolong},
+  journal   = {Engineering},
+  title     = {Autonomous Driving in the iCity—HD Maps as a Key Challenge of the Automotive Industry},
+  year      = {2016},
+  issn      = {2095-8099},
+  month     = jun,
+  number    = {2},
+  pages     = {159--162},
+  volume    = {2},
+  doi       = {10.1016/j.eng.2016.02.010},
+  file      = {:pdf/Seif2016 - Autonomous Driving in the ICity—HD Maps As a Key Challenge of the Automotive Industry.pdf:PDF},
+  groups    = {HD-Map},
+  publisher = {Elsevier BV},
+}
+
+@Article{Pfab2024,
+  author  = {Florian Pfab; Nils Gehrke; Frank Diermeyer},
+  journal = {IEEE International Conference on Systems, Man, and Cybernetics},
+  title   = {How to Drive - An Ability-based Description of Autonomous, Remote and Human Driving},
+  year    = {2024},
+  comment = {Not yet published by smc},
+  file    = {:pdf/Pfab2024 - How to Drive an Ability Based Description of Autonomous, Remote and Human Driving.pdf:PDF},
+  groups  = {teleoperated_driving},
+}
+
+@Article{Blasco2023,
+  author     = {Blasco, Ricardo and Ferrante, Guido Carlo and Watermann, Cara and Palaios, Alexandros},
+  journal    = {IEEE Communications Magazine},
+  title      = {Predictive Quality of Service in Cellular Networks: Challenges, Framework, and Application in Vehicular Communications},
+  year       = {2023},
+  issn       = {1558-1896},
+  month      = mar,
+  number     = {3},
+  pages      = {44--49},
+  volume     = {61},
+  comment    = {Take-aways:
+- dsicusses the challenges in quality of service prediction: horizon definition, uncertainty in prediction, data collection.
+- points out that uncertainty comes from two sources: intrisinc and model
+- suggest there are two ways to predict the network condition: stateless (map-based) vs stateful approach
+- proposes a framework that uses a statistical model to describe the "stateful" network condition},
+  doi        = {10.1109/mcom.004.2200180},
+  file       = {:pdf/Blasco2023 - Predictive Quality of Service in Cellular Networks_ Challenges, Framework, and Application in Vehicular Communications.pdf:PDF},
+  groups     = {pqos_servey, PQoS},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@TechReport{ETSI2019,
+  author     = {{European Telecommunications Standards Institute}},
+  title      = {5G; Network Data Analytics Services; Stage 3 (Release 15) (TS 129 520 V15.3.0)},
+  year       = {2019},
+  file       = {:pdf/ETSI2019 - 5G\; Network Data Analytics Services\; Stage 3 (Release 15) (TS 129 520 V15.3.0).pdf:PDF},
+  groups     = {PQoS, standards},
+  ranking    = {rank3},
+  readstatus = {skimmed},
+  school     = {ETSI},
+  url        = {https://www.etsi.org/deliver/etsi_ts/129500_129599/129520/15.03.00_60/ts_129520v150300p.pdf},
+}
+
+@InProceedings{Moreira2020,
+  author     = {Moreira, Darlan C. and Guerreiro, Igor M. and Sun, Wanlu and Cavalcante, Charles C. and Sousa, Diego A.},
+  booktitle  = {2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring)},
+  title      = {QoS Predictability in V2X Communication with Machine Learning},
+  year       = {2020},
+  month      = may,
+  publisher  = {IEEE},
+  comment    = {- Evaluated in simulation
+- Prediction only downlink unicast
+- Prediction only reliability and latency, binary output (in-time/late)
+- input: last 5 delays, location, RSRP,RSRQ, SINR, CQI, HARQ, avg. throughput UE cell, cell load, index of serving cell
+- replace missing values with mean value
+- prediction in 2 seconds with 85% reliability
+- Use ARIMA},
+  doi        = {10.1109/vtc2020-spring48590.2020.9129490},
+  file       = {:pdf/Moreira2020 - QoS Predictability in V2X Communication with Machine Learning.pdf:PDF},
+  groups     = {methods, PQoS},
+  readstatus = {skimmed},
+}
+
+@Misc{Tomczak2012,
+  author    = {Tomczak, Jakub M. and Swiatek, Jerzy and Latawiec, Krzysztof},
+  title     = {Gaussian process regression as a predictive model for Quality-of-Service in Web service systems},
+  year      = {2012},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.1207.6910},
+  groups    = {methods, PQoS},
+  keywords  = {Networking and Internet Architecture (cs.NI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences, G.3; H.3.5; I.5.4, 60G15, 68M11, 97R40},
+  publisher = {arXiv},
+}
+
+@InProceedings{Vielhaus2022,
+  author     = {Vielhaus, Christian L. and Busch, Johannes V. S. and Geuer, Philipp and Palaios, Alexandros and Rischke, Justus and Külzer, Daniel F. and Latzko, Vincent and Fitzek, Frank H.P.},
+  booktitle  = {Proceedings of the 20th ACM International Symposium on Mobility Management and Wireless Access},
+  title      = {Handover Predictions as an Enabler for Anticipatory Service Adaptations in Next-Generation Cellular Networks},
+  year       = {2022},
+  month      = oct,
+  publisher  = {ACM},
+  series     = {MSWiM ’22},
+  collection = {MSWiM ’22},
+  doi        = {10.1145/3551660.3560913},
+  file       = {:pdf/Vielhaus2022 - Handover Predictions As an Enabler for Anticipatory Service Adaptations in Next Generation Cellular Networks.pdf:PDF},
+  groups     = {methods, PQoS, handover},
+}
+
+@Misc{Dzaferagic2024,
+  author    = {Dzaferagic, Merim and Xavier, Bruno Missi and Collins, Diarmuid and D'Onofrio, Vince and Martinello, Magnos and Ruffini, Marco},
+  title     = {ML-based handover prediction over a real O-RAN deployment using RAN Intelligent controller},
+  year      = {2024},
+  comment   = {handover predicition to minimize the network operator cost through dynamic resource allocation},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.2404.19671},
+  file      = {:pdf/Dzaferagic2024 - ML Based Handover Prediction Over a Real O RAN Deployment Using RAN Intelligent Controller.pdf:PDF},
+  groups    = {PQoS, handover, resource allocation},
+  keywords  = {Networking and Internet Architecture (cs.NI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
+}
+
+@InProceedings{Abdah2020,
+  author    = {Abdah, Hadeel and Barraca, Joao Paulo and Aguiar, Rui L.},
+  booktitle = {ICC 2020 - 2020 IEEE International Conference on Communications (ICC)},
+  title     = {Handover Prediction Integrated with Service Migration in 5G Systems},
+  year      = {2020},
+  month     = jun,
+  pages     = {1--7},
+  publisher = {IEEE},
+  volume    = {15 2 0},
+  doi       = {10.1109/icc40277.2020.9149426},
+  file      = {:pdf/Abdah2020 - Handover Prediction Integrated with Service Migration in 5G Systems.pdf:PDF},
+  groups    = {handover, PQoS},
+}
+
+@Article{Yao2012,
+  author    = {Yao, Jun and Kanhere, Salil S. and Hassan, Mahbub},
+  journal   = {IEEE Transactions on Mobile Computing},
+  title     = {Improving QoS in High-Speed Mobility Using Bandwidth Maps},
+  year      = {2012},
+  issn      = {1536-1233},
+  month     = apr,
+  number    = {4},
+  pages     = {603--617},
+  volume    = {11},
+  comment   = {Usage: adaptive video stream with proposal for algorithms
+Usage: switch between network provider given the network condition},
+  doi       = {10.1109/tmc.2011.97},
+  file      = {:pdf/Yao2012 - Improving QoS in High Speed Mobility Using Bandwidth Maps.pdf:PDF},
+  groups    = {methods, adaptive_bitrate},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank5},
+}
+
+@InProceedings{Akselrod2017,
+  author     = {Akselrod, Mark and Becker, Nico and Fidler, Markus and Luebben, Ralf},
+  booktitle  = {2017 IEEE 86th Vehicular Technology Conference (VTC-Fall)},
+  title      = {4G LTE on the Road - What Impacts Download Speeds Most?},
+  year       = {2017},
+  month      = sep,
+  publisher  = {IEEE},
+  comment    = {Measurement campaigns in commercial LTE network
+analysis: Throughput vs (signal quaility, transport protocol, temporal factor, spatial factor)
+Still download speed
+Variation between weekdays and weekend is small},
+  doi        = {10.1109/vtcfall.2017.8288296},
+  file       = {:pdf/Akselrod2017 - 4G LTE on the Road What Impacts Download Speeds Most_.pdf:PDF},
+  groups     = {methods},
+  ranking    = {rank4},
+  readstatus = {read},
+}
+
+@InProceedings{Ide2016,
+  author     = {Ide, Christoph and Falkenberg, Robert and Kaulbars, Dennis and Wietfeld, Christian},
+  booktitle  = {2016 IEEE 83rd Vehicular Technology Conference (VTC Spring)},
+  title      = {Empirical Analysis of the Impact of LTE Downlink Channel Indicators on the Uplink Connectivity},
+  year       = {2016},
+  month      = may,
+  publisher  = {IEEE},
+  comment    = {Shows the relation between LTE downlink channel indicators and uplink prefromance (transmission time, i.e., latency)
+Able to predict hotspot (good connections). At cell edge (far away from cell), it's not poosible to map between a single connectivity indicator to the actual UL performance (in this case, latency)},
+  doi        = {10.1109/vtcspring.2016.7504211},
+  file       = {:pdf/Ide2016 - Empirical Analysis of the Impact of LTE Downlink Channel Indicators on the Uplink Connectivity.pdf:PDF},
+  groups     = {methods},
+  journal    = {2016 IEEE 83rd Vehicular Technology Conference (VTC Spring)},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@InProceedings{Kurjenniemi2008,
+  author    = {Kurjenniemi, Janne and Henttonen, Tero and Kaikkonen, Jorma},
+  booktitle = {2008 IEEE International Symposium on Wireless Communication Systems},
+  title     = {Suitability of RSRQ measurement for quality based inter-frequency handover in LTE},
+  year      = {2008},
+  pages     = {703--707},
+  publisher = {IEEE},
+  doi       = {10.1109/iswcs.2008.4726147},
+  file      = {:pdf/Kurjenniemi2008 - Suitability of RSRQ Measurement for Quality Based Inter Frequency Handover in LTE.pdf:PDF},
+  groups    = {handover},
+}
+
+@InProceedings{Kulzer2021,
+  author    = {Kulzer, Daniel F. and Kasparick, Martin and Palaios, Alexandros and Sattiraju, Raja and Ramos-Cantor, Oscar D. and Wieruch, Dennis and Tchouankem, Hugues and Gottsch, Fabian and Geuer, Philipp and Schwardmann, Jens and Fettweis, Gerhard and Schotten, Hans D. and Stanczak, Slawomir},
+  booktitle = {2021 IEEE 93rd Vehicular Technology Conference (VTC2021-Spring)},
+  title     = {AI4Mobile: Use Cases and Challenges of AI-based QoS Prediction for High-Mobility Scenarios},
+  year      = {2021},
+  month     = apr,
+  publisher = {IEEE},
+  doi       = {10.1109/vtc2021-spring51267.2021.9449059},
+  file      = {:pdf/Kulzer2021c - AI4Mobile_ Use Cases and Challenges of AI Based QoS Prediction for High Mobility Scenarios.pdf:PDF},
+  groups    = {pqos_servey},
+}
+
+@PhdThesis{Garro,
+  author = {Garro, Alexandra},
+  school = {Robert E. Kennedy Library, Cal Poly},
+  title  = {Connected Vehicle Co-simulation for Autonomous Vehicles in Airsim Using Ns-3},
+  year   = {2021},
+  doi    = {10.15368/theses.2021.82},
+  file   = {:pdf/Connected Vehicle Co-simulation for Autonomous Vehicles in Airsim.pdf:PDF},
+  groups = {network simulation},
+}
+
+@InProceedings{Drago2022,
+  author     = {Drago, Matteo and Zugno, Tommaso and Mason, Federico and Giordani, Marco and Boban, Mate and Zorzi, Michele},
+  booktitle  = {Proceedings of the 2022 Workshop on ns-3},
+  title      = {Artificial Intelligence in Vehicular Wireless Networks: A Case Study Using ns-3},
+  year       = {2022},
+  month      = jun,
+  pages      = {112--119},
+  publisher  = {ACM},
+  series     = {WNS3 2022},
+  collection = {WNS3 2022},
+  doi        = {10.1145/3532577.3532605},
+  file       = {:pdf/Drago2022 - Artificial Intelligence in Vehicular Wireless Networks_ a Case Study Using Ns 3.pdf:PDF},
+  groups     = {network simulation},
+}
+
+@InProceedings{Liu2016a,
+  author    = {Liu, Weiwei and Wang, Xichen and Zhang, Wenli and Yang, Lin and Peng, Chao},
+  booktitle = {2016 22nd Asia-Pacific Conference on Communications (APCC)},
+  title     = {Coordinative simulation with SUMO and NS3 for Vehicular Ad Hoc Networks},
+  year      = {2016},
+  month     = aug,
+  pages     = {337--341},
+  publisher = {IEEE},
+  doi       = {10.1109/apcc.2016.7581471},
+  file      = {:pdf/Liu2016a - Coordinative Simulation with SUMO and NS3 for Vehicular Ad Hoc Networks.pdf:PDF},
+  groups    = {network simulation},
+}
+
+@TechReport{5GAA2023,
+  author      = {5GAA},
+  institution = {5GAA Automotive Association},
+  title       = {Predictive QoS and V2X Service Adaptation},
+  year        = {2023},
+  file        = {:pdf/Association2023 - Predictive QoS and V2X Service Adaptation.pdf:PDF},
+  groups      = {standards},
+}
+
+@Misc{5GAA2020,
+  author = {5GAA},
+  month  = oct,
+  title  = {C-V2X Use Cases Volume II:Examples and Service LevelRequirements},
+  year   = {2020},
+  file   = {:pdf/Association - C V2X Use Cases Volume II_Examples and Service LevelRequirements.pdf:PDF},
+  groups = {standards},
+}
+
+@PhdThesis{Schmid2021,
+  author = {Josef Schmid},
+  school = {Universität Passau},
+  title  = {Learning-Based Quality of Service Prediction in Cellular Vehicle Communication},
+  year   = {2021},
+  file   = {:pdf/Schmid2021 - Learning Based Quality of Service Prediction in Cellular Vehicle Communication.pdf:PDF},
+  groups = {methods},
+}
+
+@InProceedings{Schmid2018,
+  author    = {Schmid, Josef and Heß, Philipp and Höß, Alfred and Schuller, Björn W.},
+  booktitle = {2018 14th International Wireless Communications & Mobile Computing Conference (IWCMC)},
+  title     = {Passive monitoring and geo-based prediction of mobile network vehicle-to-server communication},
+  year      = {2018},
+  pages     = {1483-1488},
+  comment   = {- uses the definition "connectivity map"
+- KPIs: passive measurement, throughput measurement, PHY, GPS
+- It only uses the map to create the prediction
+- three kinds of connectivity map are introduced: based on OSM segments, based on euqidistant segments, based on grid.},
+  doi       = {10.1109/IWCMC.2018.8450395},
+  file      = {:pdf/Schmid2018 - Passive Monitoring and Geo Based Prediction of Mobile Network Vehicle to Server Communication.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {Throughput;Tools;Long Term Evolution;Global Positioning System;Monitoring;Time measurement;Servers;passive monitoring;vehicle-to-everything communication;throughput prediction;connectivity map;cellular network},
+  ranking   = {rank5},
+}
+
+@InProceedings{Schmid2019,
+  author    = {Schmid, Josef and Schneider, Mathias and Höß, Alfred and Schuller, Björn},
+  booktitle = {2019 15th International Wireless Communications & Mobile Computing Conference (IWCMC)},
+  title     = {A Comparison of AI-Based Throughput Prediction for Cellular Vehicle-To-Server Communication},
+  year      = {2019},
+  pages     = {471-476},
+  comment   = {- compared the performance of geo-based approach and ML-based approach
+- uses grid-based as representation for the "connectivity map"},
+  doi       = {10.1109/IWCMC.2019.8766567},
+  file      = {:pdf/Schmid2019 - A Comparison of AI Based Throughput Prediction for Cellular Vehicle to Server Communication.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {Buildings;Throughput;Time series analysis;Global Positioning System;Servers;Road transportation;Reliability;throughput prediction;support vector regression;connectivity map;cellular network},
+  ranking   = {rank5},
+}
+
+@InProceedings{Schmid2019a,
+  author    = {Schmid, Josef and Schneider, Mathias and HöB, Alfred and Schuller, Björn},
+  booktitle = {2019 IEEE International Conference on Connected Vehicles and Expo (ICCVE)},
+  title     = {A Deep Learning Approach for Location Independent Throughput Prediction},
+  year      = {2019},
+  pages     = {1-5},
+  doi       = {10.1109/ICCVE45908.2019.8965216},
+  file      = {:pdf/Schmid2019a - A Deep Learning Approach for Location Independent Throughput Prediction.pdf:PDF},
+  groups    = {methods, PQoS},
+  keywords  = {throughput prediction;deep learning;cellular network},
+  ranking   = {rank5},
+}
+
+@Misc{Jomrich2018,
+  author    = {Florian Jomrich and Josef Schmid and Steffen Knapp and Alfred Hoss and Ralf Steinmetz and Bjorn Schuller},
+  title     = {Analysing communication requirements for crowd sourced backend generation of HD Maps used in automated driving},
+  year      = {2018},
+  doi       = {10.1109/vnc.2018.8628335},
+  groups    = {HD-Map, Autonomous Driving},
+  journal   = {2018 IEEE Vehicular Networking Conference (VNC)},
+  pages     = {1-8},
+  publisher = {IEEE},
+}
+
+@Article{Stepanyants2024,
+  author    = {Stepanyants, Vitaly G. and Romanov, Aleksandr Y.},
+  journal   = {IEEE Intelligent Transportation Systems Magazine},
+  title     = {A Survey of Integrated Simulation Environments for Connected Automated Vehicles: Requirements, Tools, and Architecture},
+  year      = {2024},
+  issn      = {1941-1197},
+  month     = mar,
+  number    = {2},
+  pages     = {6--22},
+  volume    = {16},
+  doi       = {10.1109/mits.2023.3335126},
+  file      = {:pdf/Stepanyants2024 - A Survey of Integrated Simulation Environments for Connected Automated Vehicles_ Requirements, Tools, and Architecture.pdf:PDF},
+  groups    = {network simulation},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Piorkowski2008,
+  author    = {M. Piórkowski and M. Raya and A. Lezama Lugo and P. Papadimitratos and M. Grossglauser and J.-P. Hubaux},
+  journal   = {ACM SIGMOBILE Mobile Computing and Communications Review},
+  title     = {TraNS: realistic joint traffic and network simulator for VANETs},
+  year      = {2008},
+  issn      = {1559-1662},
+  number    = {1},
+  pages     = {31-33},
+  volume    = {12},
+  doi       = {10.1145/1374512.1374522},
+  file      = {:pdf/Piorkowski2008 - TraNS_ Realistic Joint Traffic and Network Simulator for VANETs.pdf:PDF},
+  groups    = {network simulation},
+  publisher = {Association for Computing Machinery (ACM)},
+  subtitle  = {realistic joint traffic and network simulator for VANETs},
+}
+
+@Article{Yue2018a,
+  author    = {Yue, Chaoqun and Jin, Ruofan and Suh, Kyoungwon and Qin, Yanyuan and Wang, Bing and Wei, Wei},
+  journal   = {IEEE Transactions on Mobile Computing},
+  title     = {LinkForecast: Cellular Link Bandwidth Prediction in LTE Networks},
+  year      = {2018},
+  issn      = {1536-1233},
+  month     = jul,
+  number    = {7},
+  pages     = {1582--1594},
+  volume    = {17},
+  doi       = {10.1109/tmc.2017.2756937},
+  file      = {:pdf/Yue2018a - LinkForecast_ Cellular Link Bandwidth Prediction in LTE Networks.pdf:PDF},
+  groups    = {methods, KPIs, PQoS},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Bentaleb2019,
+  author    = {Abdelhak Bentaleb and Bayan Taani and Ali C. Begen and Christian Timmerer and Roger Zimmermann},
+  journal   = {IEEE Communications Surveys &amp; Tutorials},
+  title     = {A Survey on Bitrate Adaptation Schemes for Streaming Media Over HTTP},
+  year      = {2019},
+  issn      = {1553-877X},
+  number    = {1},
+  pages     = {562-585},
+  volume    = {21},
+  doi       = {10.1109/comst.2018.2862938},
+  file      = {:pdf/Bentaleb2019 - A Survey on Bitrate Adaptation Schemes for Streaming Media Over HTTP.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Bentaleb2021,
+  author    = {Abdelhak Bentaleb and Ali C. Begen and Saad Harous and Roger Zimmermann},
+  journal   = {IEEE Transactions on Multimedia},
+  title     = {Data-Driven Bandwidth Prediction Models and Automated Model Selection for Low Latency},
+  year      = {2021},
+  issn      = {1520-9210},
+  pages     = {2588-2601},
+  volume    = {23},
+  doi       = {10.1109/tmm.2020.3013387},
+  file      = {:pdf/Data-Driven_Bandwidth_Prediction_Models_and_Automated_Model_Selection_for_Low_Latency.pdf:PDF},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Misc{Xie2015,
+  author    = {Xiufeng Xie and Xinyu Zhang and Swarun Kumar and Li Erran Li},
+  title     = {piStream: Physical Layer Informed Adaptive Video Streaming over LTE},
+  year      = {2015},
+  doi       = {10.1145/2789168.2790118},
+  file      = {:pdf/Xie2015 - PiStream_ Physical Layer Informed Adaptive Video Streaming Over LTE.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  journal   = {Proceedings of the 21st Annual International Conference on Mobile Computing and Networking},
+  publisher = {ACM},
+  subtitle  = {Physical Layer Informed Adaptive Video Streaming over LTE},
+}
+
+@Article{Mei2020,
+  author     = {Lifan Mei and Runchen Hu and Houwei Cao and Yong Liu and Zifan Han and Feng Li and Jin Li},
+  journal    = {Computer Networks},
+  title      = {Realtime mobile bandwidth prediction using LSTM neural network and Bayesian fusion},
+  year       = {2020},
+  issn       = {1389-1286},
+  pages      = {107515},
+  volume     = {182},
+  comment    = {- Predict bandwidth in mobility scenarios, such as subway and bus
+- input: recent bandwidth measurements},
+  doi        = {10.1016/j.comnet.2020.107515},
+  file       = {:pdf/Mei2020 - Realtime Mobile Bandwidth Prediction Using LSTM Neural Network and Bayesian Fusion.pdf:PDF},
+  groups     = {methods},
+  publisher  = {Elsevier BV},
+  readstatus = {skimmed},
+}
+
+@Article{Bentaleb2023,
+  author    = {Abdelhak Bentaleb and Mehmet N. Akcay and May Lim and Ali C. Begen and Roger Zimmermann},
+  journal   = {IEEE Transactions on Multimedia},
+  title     = {BoB: Bandwidth Prediction for Real-Time Communications Using Heuristic and Reinforcement Learning},
+  year      = {2023},
+  issn      = {1520-9210},
+  pages     = {6930-6945},
+  volume    = {25},
+  doi       = {10.1109/tmm.2022.3216456},
+  file      = {:pdf/Bentaleb2023 - BoB_ Bandwidth Prediction for Real Time Communications Using Heuristic and Reinforcement Learning.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Misc{,
+  author    = {Jun Yao and Salil S. Kanhere and Mahbub Hassan},
+  title     = {An empirical study of bandwidth predictability in mobile computing},
+  year      = {2008},
+  doi       = {10.1145/1410077.1410081},
+  file      = {:pdf/Yao2008 - An Empirical Study of Bandwidth Predictability in Mobile Computing.pdf:PDF},
+  groups    = {network_quality},
+  journal   = {Proceedings of the third ACM international workshop on Wireless network testbeds, experimental evaluation and characterization},
+  pages     = {11-18},
+  publisher = {ACM},
+}
+
+@Misc{Wei2016,
+  author    = {Bo Wei and Kenji Kanai and Jiro Katto},
+  title     = {History-based throughput prediction with Hidden Markov Model in mobile networks},
+  year      = {2016},
+  doi       = {10.1109/icmew.2016.7574683},
+  file      = {:pdf/Wei2016 - History Based Throughput Prediction with Hidden Markov Model in Mobile Networks.pdf:PDF},
+  groups    = {methods},
+  journal   = {2016 IEEE International Conference on Multimedia &amp; Expo Workshops (ICMEW)},
+  pages     = {1-6},
+  publisher = {IEEE},
+}
+
+@Misc{Kurdoglu2016,
+  author    = {Eymen Kurdoglu and Yong Liu and Yao Wang and Yongfang Shi and ChenChen Gu and Jing Lyu},
+  title     = {Real-time bandwidth prediction and rate adaptation for video calls over cellular networks},
+  year      = {2016},
+  doi       = {10.1145/2910017.2910608},
+  file      = {:pdf/Kurdoglu2016 - Real Time Bandwidth Prediction and Rate Adaptation for Video Calls Over Cellular Networks.pdf:PDF},
+  groups    = {adaptive_bitrate, PQoS},
+  journal   = {Proceedings of the 7th International Conference on Multimedia Systems},
+  publisher = {ACM},
+}
+
+@Misc{Wei2018,
+  author    = {Bo Wei and Wataru Kawakami and Kenji Kanai and Jiro Katto and Shangguang Wang},
+  title     = {TRUST: A TCP Throughput Prediction Method in Mobile Networks},
+  year      = {2018},
+  doi       = {10.1109/glocom.2018.8647390},
+  file      = {:pdf/Wei2018 - TRUST_ a TCP Throughput Prediction Method in Mobile Networks.pdf:PDF},
+  groups    = {methods},
+  journal   = {2018 IEEE Global Communications Conference (GLOBECOM)},
+  pages     = {1-6},
+  publisher = {IEEE},
+}
+
+@Misc{Azmin2022,
+  author     = {Tahmina Azmin and Mohamad Ahmadinejad and Nashid Shahriar},
+  title      = {Bandwidth Prediction in 5G Mobile Networks Using Informer},
+  year       = {2022},
+  comment    = {Used "informer" (DNN-based) to predict downlink bandwidth
+Input metrics: gps, cellid, network mode, rsrq, rsrp, snr, cqi, rssi, dl_bitrate, ul_bitrate},
+  doi        = {10.1109/nof55974.2022.9942521},
+  file       = {:pdf/Azmin2022 - Bandwidth Prediction in 5G Mobile Networks Using Informer.pdf:PDF},
+  groups     = {methods},
+  journal    = {2022 13th International Conference on Network of the Future (NoF)},
+  pages      = {1-9},
+  publisher  = {IEEE},
+  readstatus = {skimmed},
+}
+
+@Misc{Rikic2021,
+  author    = {Bojan Rikic and Dragan Samardzija and Ognjen Cadovski and Tomislav Maruna},
+  title     = {Cellular network bandwidth prediction in consumer applications},
+  year      = {2021},
+  comment   = {- prediction bandwidth to choose video encoding chunk
+- chunk-based adaptive bitrate
+- not relevant for pqos paper},
+  doi       = {10.1109/icce50685.2021.9427757},
+  file      = {:pdf/Rikic2021 - Cellular Network Bandwidth Prediction in Consumer Applications.pdf:PDF},
+  groups    = {methods, adaptive_bitrate},
+  journal   = {2021 IEEE International Conference on Consumer Electronics (ICCE)},
+  pages     = {1-3},
+  publisher = {IEEE},
+  ranking   = {rank1},
+}
+
+@Misc{Jomrich2017,
+  author    = {Florian Jomrich and Tushar Wankhede and Tobias Ruckelt and Daniel Burgstahler and Doreen Bohnstedt and Ralf Steinmetz and Steffen Knapp},
+  title     = {Demo: rapid cellular network simulation framework for automotive scenarios (RACE framework)},
+  year      = {2017},
+  doi       = {10.1109/netsys.2017.7931516},
+  file      = {:pdf/Jomrich2017 - Demo_ Rapid Cellular Network Simulation Framework for Automotive Scenarios (RACE Framework).pdf:PDF},
+  groups    = {simulation},
+  journal   = {2017 International Conference on Networked Systems (NetSys)},
+  pages     = {1-2},
+  publisher = {IEEE},
+}
+
+@PhdThesis{Jomrich2020,
+  author = {Florian Jomrich},
+  school = {Technische Universität Darmstadt},
+  title  = {Dynamic maps for highly automated driving-generation, distribution and provision},
+  year   = {2020},
+  file   = {:pdf/Jomrich2020 - Dynamic Maps for Highly Automated Driving Generation, Distribution and Provision.pdf:PDF},
+  groups = {HD-Map},
+}
+
+@Misc{Jomrich2017a,
+  author    = {Florian Jomrich and Aakash Sharma and Tobias Rückelt and Daniel Burgstahler and Doreen Böhnstedt},
+  title     = {Dynamic Map Update Protocol for Highly Automated Driving Vehicles},
+  year      = {2017},
+  doi       = {10.5220/0006279800680078},
+  file      = {:pdf/Jomrich2017a - Dynamic Map Update Protocol for Highly Automated Driving Vehicles.pdf:PDF},
+  groups    = {HD-Map, method},
+  journal   = {Proceedings of the 3rd International Conference on Vehicle Technology and Intelligent Transport Systems},
+  pages     = {68-78},
+  publisher = {SCITEPRESS - Science and Technology Publications},
+}
+
+@Conference{Jomrich2018,
+  author       = {Florian Jomrich and Alexander Herzberger and Tobias Meuser and Björn Richerzhagen and Ralf Steinmetz and Cornelius Wille},
+  booktitle    = {Proceedings of the 4th International Conference on Vehicle Technology and Intelligent Transport Systems - Volume 1: VEHITS,},
+  title        = {Cellular Bandwidth Prediction for Highly Automated Driving - Evaluation of Machine Learning Approaches based on Real-World Data},
+  year         = {2018},
+  organization = {INSTICC},
+  pages        = {121-132},
+  publisher    = {SciTePress},
+  comment      = {DId data recording campaign
+Proposed the idea of coperate connectivity maps with ML models},
+  doi          = {10.5220/0006692501210132},
+  file         = {:pdf/Jomrich2018b - Cellular Bandwidth Prediction for Highly Automated Driving Evaluation of Machine Learning Approaches Based on Real World Data.pdf:PDF},
+  groups       = {methods},
+  isbn         = {978-989-758-293-6},
+  priority     = {prio1},
+  ranking      = {rank5},
+  readstatus   = {skimmed},
+}
+
+@InBook{Jomrich2019,
+  author    = {Jomrich, Florian and Fischer, Florian and Knapp, Steffen and Meuser, Tobias and Richerzhagen, Björn and Steinmetz, Ralf},
+  pages     = {328--350},
+  publisher = {Springer International Publishing},
+  title     = {Enhanced Cellular Bandwidth Prediction for Highly Automated Driving},
+  year      = {2019},
+  isbn      = {9783030266332},
+  booktitle = {Smart Cities, Green Technologies and Intelligent Transport Systems},
+  comment   = {pdf not found},
+  doi       = {10.1007/978-3-030-26633-2_16},
+  groups    = {methods},
+  issn      = {1865-0937},
+}
+
+@Misc{Jomrich2019a,
+  author    = {Florian Jomrich and Aakash Sharma and Tobias Rückelt and Doreen Böhnstedt and Ralf Steinmetz},
+  title     = {Intelligent Offloading Distribution of High Definition Street Maps for Highly Automated Vehicles},
+  year      = {2019},
+  doi       = {10.1007/978-3-030-02907-4_11},
+  groups    = {HD-Map},
+  issn      = {1865-0929},
+  pages     = {209-228},
+  publisher = {Springer International Publishing},
+}
+
+@Misc{Denizer2024,
+  author     = {Birkan Denizer and Olaf Landsiedel},
+  title      = {BandSeer: Bandwidth Prediction for Cellular Networks},
+  year       = {2024},
+  comment    = {Bi-LSTM for DL prediction
+Uses three datasets: NYU-METS, Beyond 5G, BerlinV2X
+Compared with different baselines: Informer, TPA-LSTM, ARIMA, EWMA, Shifted
+predicit multiple steps in prediction horizon},
+  doi        = {10.1109/lcn60385.2024.10639706},
+  file       = {:pdf/Denizer2024 - BandSeer_ Bandwidth Prediction for Cellular Networks.pdf:PDF},
+  groups     = {methods},
+  journal    = {2024 IEEE 49th Conference on Local Computer Networks (LCN)},
+  pages      = {1-8},
+  publisher  = {IEEE},
+  readstatus = {skimmed},
+}
+
+@Article{Zhu2025,
+  author    = {Difeng Zhu and Yafei Zhang and Xuan Gong and Hai-miao Hu and Yi Gao},
+  journal   = {Computer Networks},
+  title     = {DTS-BWpredictor: Dual-scale temporal strategy based bandwidth prediction in highly dynamic links},
+  year      = {2025},
+  issn      = {1389-1286},
+  pages     = {111071},
+  volume    = {259},
+  doi       = {10.1016/j.comnet.2025.111071},
+  file      = {:pdf/Zhu2025 - DTS BWpredictor_ Dual Scale Temporal Strategy Based Bandwidth Prediction in Highly Dynamic Links.pdf:PDF},
+  groups    = {methods},
+  publisher = {Elsevier BV},
+}
+
+@Article{Kim2019,
+  author    = {Jeongseop Kim and Ganguk Hwang},
+  journal   = {IEEE Transactions on Wireless Communications},
+  title     = {Adaptive Bandwidth Allocation Based on Sample Path Prediction With Gaussian Process Regression},
+  year      = {2019},
+  issn      = {1536-1276},
+  number    = {10},
+  pages     = {4983-4996},
+  volume    = {18},
+  doi       = {10.1109/twc.2019.2931570},
+  file      = {:pdf/Kim2019 - Adaptive Bandwidth Allocation Based on Sample Path Prediction with Gaussian Process Regression.pdf:PDF},
+  groups    = {resource allocation},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Misc{Ruan2018,
+  author    = {Lihua Ruan and Sourav Mondal and Elaine Wong},
+  title     = {Machine learning based bandwidth prediction in tactile heterogeneous access networks},
+  year      = {2018},
+  doi       = {10.1109/infcomw.2018.8406834},
+  file      = {:pdf/Ruan2018 - Machine Learning Based Bandwidth Prediction in Tactile Heterogeneous Access Networks.pdf:PDF},
+  groups    = {resource allocation},
+  journal   = {IEEE INFOCOM 2018 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)},
+  pages     = {1-2},
+  publisher = {IEEE},
+}
+
+@Article{Zhao2011,
+  author    = {HaiTao Zhao and Shan Wang and JiBo Wei and An Song and Ying Li},
+  journal   = {Science China Information Sciences},
+  title     = {Model-based approach for available bandwidth prediction in multi-hop wireless networks},
+  year      = {2011},
+  issn      = {1674-733X},
+  number    = {9},
+  pages     = {1916-1927},
+  volume    = {54},
+  doi       = {10.1007/s11432-011-4283-y},
+  file      = {:pdf/Zhao2011 - Model Based Approach for Available Bandwidth Prediction in Multi Hop Wireless Networks.pdf:PDF},
+  groups    = {methods},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Lee2024,
+  author     = {Hyeonji Lee and Yoohwa Kang and Minju Gwak and Donghyeok An},
+  journal    = {ETRI Journal},
+  title      = {Bi‐LSTM model with time distribution for bandwidth prediction in mobile networks},
+  year       = {2024},
+  issn       = {1225-6463},
+  number     = {2},
+  pages      = {205-217},
+  volume     = {46},
+  comment    = {This paper first predicts the type of the network (2G, 3G, 4G, 5G), then use the corresponding LSTM model to predict the bandwidth
+predict downlink bandwidth
+Use public real-world data},
+  doi        = {10.4218/etrij.2022-0459},
+  file       = {:pdf/Lee2024 - Bi‐LSTM Model with Time Distribution for Bandwidth Prediction in Mobile Networks.pdf:PDF},
+  groups     = {methods, adaptive_bitrate},
+  publisher  = {Wiley},
+  readstatus = {skimmed},
+}
+
+@Article{Zhang2023a,
+  author    = {Zhang, Menghan and Jiang, Xianliang and Jin, Guang and Li, Penghui and Chen, Haiming},
+  journal   = {Computer Networks},
+  title     = {CapRadar: Real-time adaptive bandwidth prediction for dynamic wireless networks},
+  year      = {2023},
+  issn      = {1389-1286},
+  month     = sep,
+  pages     = {109865},
+  volume    = {233},
+  doi       = {10.1016/j.comnet.2023.109865},
+  file      = {:pdf/Zhang2023a - CapRadar_ Real Time Adaptive Bandwidth Prediction for Dynamic Wireless Networks.pdf:PDF},
+  groups    = {methods},
+  publisher = {Elsevier BV},
+}
+
+@Misc{Oussakel2019,
+  author     = {Imane Oussakel and Philippe Owezarski and Pascal Berthou},
+  title      = {Cellular Uplink Bandwidth Prediction Based on Radio Measurements},
+  year       = {2019},
+  comment    = {- elaborate on why uplink data rate is usually lower than downlink data rate (OFDMA and SC-FDMA)
+- predicts UL datarate
+- input: received interference power, UL RSSI, SNR, Rx power
+- Tested with labor equipements for LTE
+- Analysis for sensitivity to lag size, training data length, noise level linearity, high noise level},
+  doi        = {10.1145/3345770.3356733},
+  file       = {:pdf/Oussakel2019 - Cellular Uplink Bandwidth Prediction Based on Radio Measurements.pdf:PDF},
+  groups     = {methods},
+  journal    = {Proceedings of the 17th ACM International Symposium on Mobility Management and Wireless Access},
+  pages      = {111-118},
+  publisher  = {ACM},
+  readstatus = {skimmed},
+}
+
+@Misc{Palaios2021b,
+  author    = {Alexandros Palaios and Christian Vielhaus and Daniel F. Kulzer and Philipp Geuer and Raja Sattiraju and Jochen Fink and Martin Kasparick and Cara Watermann and Gerhard Fettweis and Frank H. P. Fitzek and Hans D. Schotten and Slawomir Stanczak},
+  title     = {Effect of Spatial, Temporal and Network Features on Uplink and Downlink Throughput Prediction},
+  year      = {2021},
+  doi       = {10.1109/5gwf52925.2021.00080},
+  file      = {:pdf/Palaios2021b - Effect of Spatial, Temporal and Network Features on Uplink and Downlink Throughput Prediction.pdf:PDF},
+  groups    = {network_quality},
+  journal   = {2021 IEEE 4th 5G World Forum (5GWF)},
+  pages     = {418-423},
+  publisher = {IEEE},
+}
+
+@Misc{Palaios2021c,
+  author     = {Alexandros Palaios and Philipp Geuer and Jochen Fink and Daniel F. Kulzer and Fabian Gottsch and Martin Kasparick and Daniel Schaufele and Rodrigo Hernangomez and Sanket Partani and Raja Sattiraju and Atul Kumar and Friedrich Burmeister and Andreas Weinand and Christian Vielhaus and Frank H. P. Fitzek and Gerhard Fettweis and Hans D. Schotten and Slawomir Stanczak},
+  title      = {Network under Control: Multi-Vehicle E2E Measurements for AI-based QoS Prediction},
+  year       = {2021},
+  comment    = {- AI4Mobile paper
+- focus on V2V scenario},
+  doi        = {10.1109/pimrc50174.2021.9569490},
+  file       = {:pdf/Palaios2021c - Network under Control_ Multi Vehicle E2E Measurements for AI Based QoS Prediction.pdf:PDF},
+  groups     = {network_quality, methods},
+  journal    = {2021 IEEE 32nd Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)},
+  publisher  = {IEEE},
+  readstatus = {skimmed},
+}
+
+@Misc{Kulzer2020a,
+  author    = {Daniel Fabian Kulzer and Slawomir Stanczak and Mladen Botsov},
+  title     = {Novel QoS Control Framework for Automotive Safety-Related and Infotainment Services},
+  year      = {2020},
+  doi       = {10.1109/wcnc45663.2020.9120576},
+  file      = {:pdf/Kulzer2020a - Novel QoS Control Framework for Automotive Safety Related and Infotainment Services.pdf:PDF},
+  groups    = {resource allocation},
+  journal   = {2020 IEEE Wireless Communications and Networking Conference (WCNC)},
+  pages     = {1-7},
+  publisher = {IEEE},
+}
+
+@Misc{Hernangomez2022,
+  author     = {Rodrigo Hernangomez and Alexandros Palaios and Gayathri Guruvayoorappan and Martin Kasparick and Noor Ul Ain and Slawomir Stanczak},
+  title      = {Online QoS estimation for vehicular radio environments},
+  year       = {2022},
+  comment    = {input metrics: SNR, RSRP, RSRQ, RSSI, Total throughput, active users, device throughput, requesteed throughput
+predicting downlink
+addresses statistical problem: concept drift/domain shift
+ARF-Reg (Adaptive Random Forest for Regression)
+Uses BerlinV2X},
+  doi        = {10.23919/eusipco55093.2022.9909612},
+  file       = {:pdf/Online_QoS_estimation_for_vehicular_radio_environments.pdf:PDF},
+  groups     = {methods},
+  journal    = {2022 30th European Signal Processing Conference (EUSIPCO)},
+  pages      = {1701-1705},
+  publisher  = {IEEE},
+  readstatus = {skimmed},
+}
+
+@Misc{Zhohov2021a,
+  author    = {Roman Zhohov and Alexandros Palaios and Philipp Geuer},
+  title     = {One Step Further: Tunable and Explainable Throughput Prediction based on Large-scale Commercial Networks},
+  year      = {2021},
+  doi       = {10.1109/5gwf52925.2021.00082},
+  file      = {:pdf/Zhohov2021a - One Step Further_ Tunable and Explainable Throughput Prediction Based on Large Scale Commercial Networks.pdf:PDF},
+  groups    = {methods},
+  journal   = {2021 IEEE 4th 5G World Forum (5GWF)},
+  pages     = {430-435},
+  publisher = {IEEE},
+}
+
+@Article{Sobhani2017,
+  author    = {Ashkan Sobhani and Abdulsalam Yassine and Shervin Shirmohammadi},
+  journal   = {ACM Transactions on Multimedia Computing, Communications, and Applications},
+  title     = {A Video Bitrate Adaptation and Prediction Mechanism for HTTP Adaptive Streaming},
+  year      = {2017},
+  issn      = {1551-6857},
+  number    = {2},
+  pages     = {1-25},
+  volume    = {13},
+  doi       = {10.1145/3052822},
+  file      = {:pdf/Sobhani2017 - A Video Bitrate Adaptation and Prediction Mechanism for HTTP Adaptive Streaming.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  publisher = {Association for Computing Machinery (ACM)},
+}
+
+@Misc{Carlucci2016,
+  author    = {Gaetano Carlucci and Luca De Cicco and Stefan Holmer and Saverio Mascolo},
+  title     = {Analysis and design of the google congestion control for web real-time communication (WebRTC)},
+  year      = {2016},
+  doi       = {10.1145/2910017.2910605},
+  file      = {:pdf/Carlucci2016 - Analysis and Design of the Google Congestion Control for Web Real Time Communication (WebRTC).pdf:PDF},
+  groups    = {adaptive_bitrate},
+  journal   = {Proceedings of the 7th International Conference on Multimedia Systems},
+  pages     = {1-12},
+  publisher = {ACM},
+}
+
+@Article{Sani2017,
+  author    = {Yusuf Sani and Andreas Mauthe and Christopher Edwards},
+  journal   = {IEEE Communications Surveys &amp; Tutorials},
+  title     = {Adaptive Bitrate Selection: A Survey},
+  year      = {2017},
+  issn      = {1553-877X},
+  number    = {4},
+  pages     = {2985-3014},
+  volume    = {19},
+  comment   = {ABR over HTTP, chunk-based (non realtime)},
+  doi       = {10.1109/comst.2017.2725241},
+  file      = {:pdf/Sani2017 - Adaptive Bitrate Selection_ a Survey.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Misc{Zhang2022a,
+  author    = {Dayou Zhang and Kai Shen and Fangxin Wang and Dan Wang and Jiangchuan Liu},
+  title     = {Towards Joint Loss and Bitrate Adaptation in Realtime Video Streaming},
+  year      = {2022},
+  doi       = {10.1109/icme52920.2022.9859942},
+  file      = {:pdf/Zhang2022a - Towards Joint Loss and Bitrate Adaptation in Realtime Video Streaming.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  journal   = {2022 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages     = {1-6},
+  publisher = {IEEE},
+}
+
+@Article{Feng2020,
+  author    = {Tongtong Feng and Haifeng Sun and Qi Qi and Jingyu Wang and Jianxin Liao},
+  journal   = {IEEE Transactions on Multimedia},
+  title     = {Vabis: Video Adaptation Bitrate System for Time-Critical Live Streaming},
+  year      = {2020},
+  issn      = {1520-9210},
+  number    = {11},
+  pages     = {2963-2976},
+  volume    = {22},
+  doi       = {10.1109/tmm.2019.2962313},
+  file      = {:pdf/Feng2020 - Vabis_ Video Adaptation Bitrate System for Time Critical Live Streaming.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Misc{Huang2021,
+  author    = {Siqi Huang and Jiang Xie},
+  title     = {DAVE: Dynamic Adaptive Video Encoding for Real-time Video Streaming Applications},
+  year      = {2021},
+  doi       = {10.1109/secon52354.2021.9491588},
+  file      = {:pdf/Huang2021 - DAVE_ Dynamic Adaptive Video Encoding for Real Time Video Streaming Applications.pdf:PDF},
+  groups    = {adaptive_bitrate},
+  journal   = {2021 18th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON)},
+  pages     = {1-9},
+  publisher = {IEEE},
+}
+
+@InProceedings{Rosu2016,
+  author    = {Rosu, Vlad and Marcu, Marius},
+  booktitle = {2016 IEEE 12th International Conference on Intelligent Computer Communication and Processing (ICCP)},
+  title     = {Real time adaptive video streaming},
+  year      = {2016},
+  month     = sep,
+  pages     = {239--246},
+  publisher = {IEEE},
+  doi       = {10.1109/iccp.2016.7737153},
+  file      = {:pdf/Rosu2016 - Real Time Adaptive Video Streaming.pdf:PDF},
+  groups    = {adaptive_bitrate},
+}
+
+@InProceedings{Turkovic2025,
+  author     = {Turkovic, Belma and van de Vlasakker, Rintse and Potnuru, Srinath and Schwartz, Ramon S. and D’Acunto, Lucia and Held, Oliver and Karasek, Stepan and Kusumakar, Rakshith and Cremona, Andrea and Fardanian, Raana},
+  booktitle  = {Proceedings of the 3rd International Workshop on Testing Distributed Internet of Things Systems},
+  title      = {On-Demand Network QoS Adaptation for Automated Tele-Operated Driving},
+  year       = {2025},
+  month      = mar,
+  pages      = {19--22},
+  publisher  = {ACM},
+  series     = {EuroSys ’25},
+  collection = {EuroSys ’25},
+  doi        = {10.1145/3719159.3721225},
+  file       = {:pdf/Turkovic2025 - On Demand Network QoS Adaptation for Automated Tele Operated Driving.pdf:PDF},
+  groups     = {methods},
+}
+
+@InProceedings{Drago2022a,
+  author     = {Drago, Matteo and Zugno, Tommaso and Mason, Federico and Giordani, Marco and Boban, Mate and Zorzi, Michele},
+  booktitle  = {Proceedings of the 2022 Workshop on ns-3},
+  title      = {Artificial Intelligence in Vehicular Wireless Networks: A Case Study Using ns-3},
+  year       = {2022},
+  month      = jun,
+  pages      = {112--119},
+  publisher  = {ACM},
+  series     = {WNS3 2022},
+  collection = {WNS3 2022},
+  comment    = {Tested in ns3 simulation
+following work: "Towards Decentralized Predictive Quality of Service in Next-Generation Vehicular Networks"},
+  doi        = {10.1145/3532577.3532605},
+  file       = {:pdf/Drago2022a - Artificial Intelligence in Vehicular Wireless Networks_ a Case Study Using Ns 3.pdf:PDF},
+  groups     = {methods, PQoS, resource_},
+  readstatus = {skimmed},
+}
+
+@Article{Palaios2023,
+  author     = {Palaios, Alexandros and Vielhaus, Christian L. and Külzer, Daniel F. and Watermann, Cara and Hernangómez, Rodrigo and Partani, Sanket and Geuer, Philipp and Krause, Anton and Sattiraju, Raja and Kasparick, Martin and Fettweis, Gerhard P. and Fitzek, Frank H. P. and Schotten, Hans D. and Stańczak, Slawomir},
+  journal    = {IEEE Access},
+  title      = {Machine Learning for QoS Prediction in Vehicular Communication: Challenges and Solution Approaches},
+  year       = {2023},
+  issn       = {2169-3536},
+  pages      = {92459--92477},
+  volume     = {11},
+  comment    = {- AI4Mobile paper, journal paper, very detailed
+- Discussed many appects of pQoS in vehicular communication
+- Points can be drawn from the conclusion:
+	- Gradient Boost can outperform NN
+	- ML models can capture the underlying principles of mobile network
+	- Cell load is an important metric},
+  doi        = {10.1109/access.2023.3303528},
+  file       = {:pdf/Palaios2023 - Machine Learning for QoS Prediction in Vehicular Communication_ Challenges and Solution Approaches.pdf:PDF},
+  groups     = {PQoS, methods, KPIs, pqos_servey},
+  priority   = {prio1},
+  publisher  = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking    = {rank5},
+  readstatus = {read},
+}
+
+@Misc{SAEInternational2021,
+  author       = {{SAE International}},
+  howpublished = {{SAE Standard J3016\_202104}},
+  month        = {April},
+  note         = {Revised April 2021, originally issued January 2014},
+  title        = {{Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles}},
+  year         = {2021},
+  doi          = {10.4271/J3016_202104},
+  groups       = {standards},
+  url          = {https://doi.org/10.4271/J3016_202104},
+}
+
+@TechReport{ETSI2024,
+  author  = {{ETSI}},
+  title   = {{ETSI TS 129 520 V17.14.0: 5G System (5GS); Network Data Analytics Services; Stage 3 (3GPP TS 29.520)}},
+  year    = {2024},
+  month   = sep,
+  note    = {Available at \url{https://www.etsi.org/deliver/etsi_ts/129500_129599/129520/17.08.00_60/ts_129520v170800p.pdf}},
+  number  = {TS 129 520},
+  groups  = {standards},
+  school  = {{European Telecommunications Standards Institute (ETSI)}},
+  version = {V17.8.0},
+}
+
+@Book{Bishop2006,
+  author    = {Bishop, Christopher M.},
+  publisher = {Springer},
+  title     = {Pattern Recognition and Machine Learning},
+  year      = {2006},
+  address   = {New York},
+  isbn      = {978-0387-31073-2},
+  groups    = {book},
+}
+
+@Article{,
+  author = {H. Schippers, T. Gebauer, K. Heimann, C. Wietfeld},
+  title  = {RISE: Multi-Link Proactive Low-Latency Video Streaming for Teleoperation in Fading Channels},
+  groups = {adaptive_bitrate},
+}
+
+@Misc{https://doi.org/10.48550/arxiv.2504.03989,
+  author    = {Shimanuki, Gabriel Kenji Godoy and Nascimento, Alexandre Moreira and Vismari, Lucio Flavio and Junior, Joao Batista Camargo and Junior, Jorge Rady de Almeida and Cugnasca, Paulo Sergio},
+  title     = {CORTEX-AVD: A Framework for CORner Case Testing and EXploration in Autonomous Vehicle Development},
+  year      = {2025},
+  copyright = {Creative Commons Attribution 4.0 International},
+  doi       = {10.48550/ARXIV.2504.03989},
+  file      = {:pdf/https___doi.org_10.48550_arxiv.2504.03989 - CORTEX AVD_ a Framework for CORner Case Testing and EXploration in Autonomous Vehicle Development.pdf:PDF},
+  groups    = {CC},
+  keywords  = {Robotics (cs.RO), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
+}
+
+@Misc{https://doi.org/10.48550/arxiv.2511.09032,
+  author    = {Wang, Dingji and Lu, You and Chen, Bihuan and Hao, Shuo and Jiang, Haowen and Tian, Yifan and Peng, Xin},
+  title     = {Argus: Resilience-Oriented Safety Assurance Framework for End-to-End ADSs},
+  year      = {2025},
+  copyright = {arXiv.org perpetual, non-exclusive license},
+  doi       = {10.48550/ARXIV.2511.09032},
+  groups    = {CC},
+  keywords  = {Artificial Intelligence (cs.AI), Robotics (cs.RO), Software Engineering (cs.SE), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  publisher = {arXiv},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -4432,12 +6012,21 @@ Another algorithm used to predict cyclist hand signal based on this algorithm is
 2 StaticGroup:network_quality\;0\;1\;0x397300ff\;CAR_CONNECTED\;\;;
 2 StaticGroup:simulation\;0\;1\;0x004f73ff\;CAR_CONNECTED\;\;;
 2 StaticGroup:use_case\;0\;1\;0x732400ff\;CAR_CONNECTED\;Use cases for pQoS in tod\;;
+2 StaticGroup:pqos_servey\;0\;1\;0x5e0073ff\;CAR_CONNECTED\;\;;
+2 StaticGroup:handover\;0\;1\;0x157300ff\;CAR_CONNECTED\;Paper related to handover prediction\;;
+2 StaticGroup:resource allocation\;0\;1\;0x2b0073ff\;CAR_CONNECTED\;\;;
+2 StaticGroup:telefonica_projekt_proposal\;0\;1\;0x487300ff\;CAR_CONNECTED\;\;;
+2 StaticGroup:adaptive_bitrate\;0\;1\;0x002573ff\;CAR_CONNECTED\;\;;
 1 StaticGroup:teleoperated_driving\;0\;1\;0xb7b749ff\;CAR_CONNECTED\;Literatur in Teleoperated-Driving zur Promotion am Lehrstuhl für Fahrzeugtechnik an TUM\;;
 2 StaticGroup:KPI & Failure cases\;0\;1\;0x800000ff\;MUSIC_ACCIDENTAL_DOUBLE_SHARP\;KPI for teleoperated driving and possible failure cases\;;
 2 StaticGroup:Suchbegriffe\;0\;1\;0x008080ff\;CAR_CONNECTED\;\;;
 3 StaticGroup:Human-Machine-Interface\;0\;0\;0x730000ff\;CAR_CONNECTED\;\;;
 3 StaticGroup:Remote Operation\;0\;0\;0x007373ff\;CAR_CONNECTED\;\;;
-1 StaticGroup:Autonomous Driving\;0\;0\;0x000080ff\;MDI_CAR\;All literature regarding autonomous driving\;;
+1 StaticGroup:Autonomous Driving\;0\;1\;0x000080ff\;MDI_CAR\;All literature regarding autonomous driving\;;
 2 StaticGroup:network simulation\;0\;1\;0x000073ff\;MDI_CAR\;\;;
+2 StaticGroup:HD-Map\;0\;1\;0x737300ff\;MDI_GOOGLE_MAPS\;High definition map\;;
+2 StaticGroup:av_survey\;0\;1\;0x730041ff\;MDI_CAR\;\;;
 1 StaticGroup:E2E\;0\;1\;\;\;\;;
+1 StaticGroup:book\;0\;1\;\;\;\;;
+1 StaticGroup:CC\;0\;1\;0xa96e33ff\;CAR_EMERGENCY\;Literature in Corner Case Detection\;;
 }
